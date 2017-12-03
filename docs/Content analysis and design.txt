@@ -1,0 +1,62 @@
+
+High-level content structure
+----------------------------
+
+home page
+  project 1
+  project 2
+  ...
+  project n
+honors page
+resume page
+about page
+
+Style requirements
+----------------------------
+- Communicative
+- Minimalist
+- Diligent
+
+Page specification
+----------------------------
+
+Home page:
+ - List of professional projects
+  * Title of project
+  * Role on project
+  * Personal motivation for project
+  * Image of project (if applicable)
+  
+Portfolio page:
+ - List of sections of interest
+   * List of all projects [professional, independent, personal]
+   * Title of project
+   * Role on project
+   * Personal motivation for project
+   * Image of project (if applicable)
+  
+Project page:
+ - Project title
+ - Project specification
+  * Role performed
+  * Target hardware/software
+  * Duration
+  * Team size
+  * Tools used
+ - How did the project came to be?
+ - How did the project surprise me?
+ - What did I achieve in the project?
+ - What would I like to mention in particular?
+ 
+Resume page:
+ - Personal details
+ - Passions and drives
+ - Noteworthy skills
+ - One pager [downloadable]
+
+Contact page:
+ - Phone number
+ - E-mail address
+ - Mail address/P.O. box
+ - Contact form
+ 

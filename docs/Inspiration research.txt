@@ -1,0 +1,53 @@
+
+Inspiration
+----------------------------
+
+Game designers
+==============
+
+Ary Shirazi http://www.arashshirazi.co.uk/
+Pros:
+- VERY nicely styled
+- Well-chosen images
+- Reply section on project pages
+Peculiarities:
+- Personal skills listed under portfolio (photography)
+Cons:
+- Little information about skills
+
+David Shaver http://www.davidshaver.net/
+Pros:
+- Projects all on one page directly
+- Descriptive summary of project process
+- Backstory of each project
+- Detailed contributions clearly listed
+- One page resume http://www.davidshaver.net/DavidShaver_Resume.pdf
+Peculiarities:
+- About me written in 3rd person
+Cons:
+- Formatting (e.g. font) looks somewhat unkempt
+
+Programmers
+===========
+
+Bill Lovett
+Pros:
+- Nicely styled
+- Clear, simple, essentials only
+- "What I use" page which lists prefered tools
+Peculiarities:
+- Best of page, listing encountered qoutes
+Cons:
+- Pessimistic undertone
+- Impressive projects listed low on the page
+
+Misc
+===========
+
+Kate Schelter http://kateschelter.com/about
+Pros:
+- Very nicely styled
+Peculiarities:
+- Timeline of experience
+
+Trajano one-pager guide: https://trajano.net/2017/02/developing-my-one-page-resume/
