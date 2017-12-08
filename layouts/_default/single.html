@@ -1,0 +1,93 @@
+{{ define "main" }}
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <header>
+        <!-- Display image/thumbnail that captures the project -->
+        <figure class="figure">
+          <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}"></img>
+          <figcaption class="figure-caption text-center">{{ .Params.caption }}</figcaption>
+        </figure>
+
+        <hr>
+
+          <!-- Display table with summarized project details -->
+        <table>
+          <caption>Project details</caption>
+          <tbody>
+            <!-- Roles field -->
+            <tr>
+              <th scope="row">Roles</th>
+              <td> {{ delimit .Params.roles ", " }} </td>
+            </tr>
+            <!-- Duration field -->
+            <tr>
+              <th scope="row">Duration</th>
+              <td> {{ .Params.duration }} </td>
+            </tr>
+            <!-- [OPTIONAL] platforms field -->
+            {{ if isset .Params "platform" }}
+            <tr>
+              <th scope="row">Platforms used</th>
+              <td>
+                  {{ delimit .Params.platform ", " }}
+              </td>
+            </tr>
+            {{ end }}
+            <!-- [OPTIONAL] team size field -->
+            {{ if isset .Params "teamsize" }}
+            <tr>
+              <th scope="row">Team size</th>
+              <td>
+                  {{ .Params.teamsize }}
+              </td>
+            </tr>
+            {{ end }}
+            <!-- [OPTIONAL] tech field -->
+            {{ if isset .Params "tech" }}
+            <tr>
+              <th scope="row">Tech used</th>
+              <td>
+                  {{ delimit .Params.tech ", " }}
+              </td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </header>
+
+      <article role="main" class="blog-post">
+        {{ .Content }}
+      </article>
+
+      <ul class="pager blog-pager">
+        {{ if .PrevInSection }}
+          <li class="previous">
+            <a href="{{ .PrevInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title }}">&larr; {{ i18n "previousPost" }}</a>
+          </li>
+        {{ end }}
+        {{ if .NextInSection }}
+          <li class="next">
+            <a href="{{ .NextInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title }}">{{ i18n "nextPost" }} &rarr;</a>
+          </li>
+        {{ end }}
+      </ul>
+
+
+      {{ if (.Params.comments) | or (and (or (not (isset .Params "comments")) (eq .Params.comments nil)) (.Site.Params.comments)) }}
+        {{ if .Site.DisqusShortname }}
+          <div class="disqus-comments">
+            {{ template "_internal/disqus.html" . }}
+          </div>
+        {{ end }}
+        {{ if .Site.Params.staticman }}
+          <div class="staticman-comments">
+            {{ partial "staticman-comments.html" . }}
+          </div>
+        {{ end }}
+      {{ end }}
+
+    </div>
+  </div>
+</div>
+{{ end }}

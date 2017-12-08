@@ -3,18 +3,15 @@ title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 # Brief capture
-thumbnail-url: "placehold.it/400x400"
-summary: "My personal motivation for this project"
-roles: [ "programmer" ]
-# Specification
-platform: [ "Windows" ]
+thumbnail: "https://placehold.it/400x400"
+caption: "A snappy sentence that captures the project"
+roles: [ "Programmer" ]
 duration: "4 months"
-team-size: 10
-tech: ["Visual Studio 14", "DX11"]
+# [OPTIONAL] Specification
+platform: [ "Windows" ]
+teamsize: 10
+tech: ["Visual Studio 14" ]
 ---
-
-# Project specification
-![alt-text](placehold.it/400x400)
 
 # Brief
 How did the project came to be?

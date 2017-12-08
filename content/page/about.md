@@ -1,6 +1,6 @@
 ---
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: "About me"
+subtitle: "Why you'd want to go on a date with me"
 comments: false
 ---
 
@@ -17,4 +17,6 @@ I have experience in the following programming languages:
 
 ### TL;DR
 
-Here is CV as a one-pager.
+[Here][Download link] is CV as a one-pager.
+
+[Download link]: ../../docs/OnePager.pdf

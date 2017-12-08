@@ -3,18 +3,15 @@ title: "AGR"
 date: 2017-12-03T20:46:13+01:00
 draft: true
 # Brief capture
-thumbnail-url: "placehold.it/400x400"
+thumbnail: "https://placehold.it/400x400"
 summary: "My personal motivation for this project"
-roles: [ "programmer" ]
+roles: [ "Programmer" ]
+duration: "4 months"
 # Specification
 platform: [ "Windows" ]
-duration: "4 months"
-team-size: 10
+teamsize: 10
 tech: ["Visual Studio 14", "DX11"]
 ---
-
-# Project specification
-![alt-text](placehold.it/400x400)
 
 # Brief
 How did the project came to be?

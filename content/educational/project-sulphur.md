@@ -3,18 +3,15 @@ title: "Project Sulphur"
 date: 2017-12-03T20:46:27+01:00
 draft: true
 # Brief capture
-thumbnail-url: "placehold.it/400x400"
-summary: "My personal motivation for this project"
-roles: [ "programmer" ]
+thumbnail: "https://placehold.it/400x400"
+caption: "A custom data-oriented engine"
+roles: [ "tools programmer" ]
+duration: "1 year"
 # Specification
-platform: [ "Windows" ]
-duration: "4 months"
-team-size: 10
-tech: ["Visual Studio 14", "DX11"]
+platform: [ "Windows", "PS4" ]
+teamsize: 15
+tech: ["Visual Studio 15" ]
 ---
-
-# Project specification
-![alt-text](placehold.it/400x400)
 
 # Brief
 How did the project came to be?

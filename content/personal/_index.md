@@ -1,4 +1,4 @@
 ---
-title: Personal
-subtitle: My solo-projects
+title: "Personal"
+subtitle: "My solo-projects"
 ---

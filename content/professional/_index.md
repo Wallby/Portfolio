@@ -1,4 +1,4 @@
 ---
-title: Professional
-subtitle: My industry experience (if I had any)
+title: "Professional"
+subtitle: "My industry experience (if I had any)"
 ---
