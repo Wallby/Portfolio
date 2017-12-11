@@ -26,28 +26,32 @@ Home page:
   * Role on project
   * Personal motivation for project
   * Image of project (if applicable)
-  
-Portfolio page:
- - List of sections of interest
-   * List of all projects [professional, independent, personal]
-   * Title of project
-   * Role on project
-   * Personal motivation for project
-   * Image of project (if applicable)
-  
+
+Portfolio project categories:
+ - Educational
+ - Independent
+ - Personal
+
+Project preview (on list page):
+ * Title of project
+ * Image of project (if applicable)
+ * Contribution to project
+ * Goal/motivation for project
+
 Project page:
- - Project title
+ - Big image(s) of project
+ - Project caption (snappy)
  - Project specification
-  * Role performed
-  * Target hardware/software
-  * Duration
-  * Team size
-  * Tools used
+  * Contribution(s) to project
+  * Tools used (e.g. methodologies, languages, CASE)
+  * [OPTIONAL] Duration
+  * [OPTIONAL] Team size
+  * [OPTIONAL] Target platform
  - How did the project came to be?
- - How did the project surprise me?
  - What did I achieve in the project?
- - What would I like to mention in particular?
- 
+ - How did the project surprise me?
+ - [OPTIONAL] What would I like to mention in particular?
+
 Resume page:
  - Personal details
  - Passions and drives
@@ -59,4 +63,3 @@ Contact page:
  - E-mail address
  - Mail address/P.O. box
  - Contact form
- 

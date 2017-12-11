@@ -1,22 +1,19 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
+subtitle: "A snappy sentence that captures the project"
 date: {{ .Date }}
 draft: true
 # Brief capture
-thumbnail: "https://placehold.it/400x400"
-caption: "A snappy sentence that captures the project"
-roles: [ "Programmer" ]
-duration: "4 months"
-# [OPTIONAL] Specification
-platform: [ "Windows" ]
-tech: ["Visual Studio 14", "DX11"]
+bigimg: [{src: "https://placehold.it/400x400", desc: "Placeholder"}]
+contributions: [ "Graphics programmer" ]
+tools: ["Visual Studio 14" ]
+# [OPTIONAL] duration: "... months"
+# [OPTIONAL] teamsize: 10
+# [OPTIONAL] platform: [ "Windows" ]
 ---
 
 # Brief
-How did the project came to be?
-
-How did the project surprise me?
-
-What did I achieve in the project?
-
-What would I like to mention in particular?
+- How did the project came to be?
+- What did I achieve in the project?
+- How did the project surprise me?
+- [OPTIONAL] What would I like to mention in particular?

@@ -2,6 +2,7 @@
 title: "About me"
 subtitle: "Why you'd want to go on a date with me"
 comments: false
+bigimg: [{src: "https://placehold.it/400x400", desc: "Placeholder"}]
 ---
 
 My name is Maarten ten Velden.  
