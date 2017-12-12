@@ -1,6 +1,7 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 subtitle: "A snappy sentence that captures the project"
+thumbnail: "https://placehold.it/400x400"
 date: {{ .Date }}
 draft: true
 # Brief capture

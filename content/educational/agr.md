@@ -1,7 +1,8 @@
 ---
 title: "AGR"
-subtitle: "A custom racing-game engine"
-date: 2017-12-03T20:46:13+01:00
+subtitle: "A racing-game custom engine"
+thumbnail: "https://placehold.it/400x400"
+date: 2017-05-07
 draft: true
 # Brief capture
 bigimg: [

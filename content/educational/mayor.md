@@ -1,19 +1,17 @@
 ---
-title: "Project Sulphur"
-subtitle: "A data-oriented custom engine"
+title: "Mayor"
+subtitle: "A snappy sentence that captures the project"
 thumbnail: "https://placehold.it/400x400"
-date: 2017-11-20
+date: 2016-12-12
 draft: true
 # Brief capture
 bigimg: [{src: "https://placehold.it/400x400", desc: "Placeholder"}]
-contributions: [ "Tools programmer", "Engine programmer" ]
-tools: ["Visual Studio 15", "Perforce", "Pivotal" ]
-duration: "1 year"
-teamsize: 15
-platform: [ "Windows", "PS4" ]
+contributions: [ "Graphics programmer" ]
+tools: ["Visual Studio 14" ]
+# [OPTIONAL] duration: "... months"
+# [OPTIONAL] teamsize: 10
+# [OPTIONAL] platform: [ "Windows" ]
 ---
-
-<!--more-->
 
 # Brief
 - How did the project came to be?
