@@ -5,7 +5,7 @@ theme = "beautifulhugo"
 #metaDataFormat = "yaml"
 
 [Params]
-  subtitle = "Programmer | System analyst | Object-oriented architect"
+  subtitle = "A programming enthousiast with a passion for design and mathematics"
   logo = "https://www.gravatar.com/avatar/cc0746c6e20909b347c153a932e0a235?s=512"
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"

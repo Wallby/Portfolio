@@ -5,11 +5,12 @@ comments: false
 bigimg: [{src: "https://www.gravatar.com/avatar/cc0746c6e20909b347c153a932e0a235?s=512", desc: "Placeholder"}]
 ---
 
-You are looking at the portfolio site of Maarten ten Velden: a programmer with
-a passion for object-oriented systems analysis and design. I would best describe
-myself as an optimist, a pragmatic, and a systematic thinker.
+You are looking at the portfolio site of Maarten ten Velden: a passionate, highly-skilled programmer experience in C++, real-time applications (games) and software design. I would best describe myself as an optimist, a pragmatic, and a systematic thinker.
 
-### Passions and drives
+### What I can do
+I am currently pursuing a Bachelor degree in game programming at the [NHTV University of Applied Sciences](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html) in Breda. I am highly proficient with __C++__ with over 3 years experience using the language. I have also worked with __C#__ and __Java__ in the past.
+
+### Some information about me
 I am always looking to challenge myself in news ways. One of my big beliefs is
 that learning works through repetitive failure, and sooner rather than later.
 In everything I do I value excellence above quantity, whether this is in my
@@ -18,14 +19,6 @@ self-improvement through a healthy lifestyle and meditation. Ever since I was
 seven years old I have been playing the piano. More recently, I have started
 playing the guitar and developing my singing voice.
 
-### Experience
-Over the years I have worked with several programming languages, idioms,
-methodologies, and CASE tools. My first encounter with programming in general
-was through my interest in developing customizations for a popular game called
-Minecraft. I worked with __Java__ for about one and a half years before
-picking up __C++__ and __C#__ as part of my Bachelor education. My love for C++
-exceeds that of all other languages as my first substantial projects were
-written in it.
 
 #### Methodologies
 Different projects required different methodologies...  

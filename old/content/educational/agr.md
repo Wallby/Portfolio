@@ -1,7 +1,7 @@
 ---
 title: "AGR"
 subtitle: "A racing-game custom engine"
-thumbnail: "https://placehold.it/400x400"
+thumbnail: "../images/thumbnails/promo_art_car_drifter.png"
 date: 2017-05-07
 draft: true
 # Brief capture
