@@ -1,0 +1,6 @@
+[submodule "site/themes/forty"]
+	path = site/themes/forty
+	url = https://github.com/MarcusVirg/forty
+[submodule "old/themes/beautifulhugo"]
+	path = old/themes/beautifulhugo
+	url = https://github.com/halogenica/beautifulhugo
