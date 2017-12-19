@@ -18,7 +18,7 @@
                             <header class="major">
                               {{ $logo_path := (printf "img%slogo.png" $.RelPermalink) }}
                               {{ if (fileExists (printf "static/%s" $logo_path)) }}
-                                <img src="{{ .Site.BaseURL }}{{ $logo_path }}" alt="{{ .Title }}">
+                                <img src="{{ .Site.BaseURL }}/{{ $logo_path }}" alt="{{ .Title }}">
                               {{ else }}
                                 <h1>{{ .Title }}</h1>
                               {{ end }}
