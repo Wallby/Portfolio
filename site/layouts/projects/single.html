@@ -16,7 +16,12 @@
                     <section id="one">
                         <div class="inner">
                             <header class="major">
-                                <h1>{{ .Title}}</h1>
+                              {{ $logo_path := (printf "img%slogo.png" $.RelPermalink) }}
+                              {{ if (fileExists (printf "static/%s" $logo_path)) }}
+                                <img src="{{ .Site.BaseURL }}{{ $logo_path }}" alt="{{ .Title }}">
+                              {{ else }}
+                                <h1>{{ .Title }}</h1>
+                              {{ end }}
                             </header>
                             <div class="row">
 															<div class="8u 12u$(small)">
