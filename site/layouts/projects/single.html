@@ -1,78 +1,73 @@
 <!DOCTYPE HTML>
 <html>
 
-    {{ partial "header.html"  }}
-    <body>
+{{ partial "header.html" }}
+
+<body>
 
     {{ "<!-- Wrapper -->" | safeHTML }}
-        <div id="wrapper">
+    <div id="wrapper">
 
-            {{ partial "nav.html" . }}
+        {{ partial "nav.html" . }} {{ "<!-- Main -->" | safeHTML }}
+        <div id="main" class="alt">
 
-        {{ "<!-- Main -->" | safeHTML }}
-            <div id="main" class="alt">
-
-                <!-- One -->
-                    <section id="one">
-                        <div class="inner">
-                            <header class="major">
-                              {{ $logo_path := (printf "img%slogo.png" $.RelPermalink) }}
-                              {{ if (fileExists (printf "static/%s" $logo_path)) }}
-                                <img src="{{ .Site.BaseURL }}/{{ $logo_path }}" alt="{{ .Title }}">
-                              {{ else }}
-                                <h1>{{ .Title }}</h1>
-                              {{ end }}
-                            </header>
-                            <div class="row">
-															<div class="8u 12u$(small)">
-                                <div style="position: relative; margin-bottom: 5%; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-                                  <iframe src="//www.youtube.com/embed/{{ .Params.trailer }}?autoplay=1"
-                                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
-                                  </div>
-															</div>
-                              <div class="4u 12u$(small)">
-                                <h4>What I did</h4>
-  															<ul class="alt">
-                                  {{ range .Params.contributions }}
-  																<li>{{ . }}</li>
-                                  {{ end }}
-  															</ul>
-															</div>
-															<!-- Break -->
-  														<div class="8u 12u$(small)">
-  															<ul class="actions vertical">
-                                  <h4>About the project</h4>
-    															<ul class="alt">
-                                    <p>{{ .Params.description | markdownify }}</p>
-    															</ul>
-  															</ul>
-  														</div>
-  														<div class="4u$ 12u$(small)">
-  															<ul class="actions vertical">
-                                  {{ if isset .Params "download" }}
-  																<li><a href="{{ .Params.download }}" class="button big icon fa-download">Download</a></li>
-                                  {{ end }}
-  															</ul>
-  														</div>
-  													</div>
-                            {{ .Content }}
+            <!-- One -->
+            <section id="one">
+                <div class="inner">
+                    {{ $logo_path := (printf "img%slogo.png" $.RelPermalink) }}
+                    {{ if (fileExists (printf "static/%s" $logo_path)) }}
+                    <div class="row">
+                        <div class="12u" id="logo">
+                            <img src="{{ .Site.BaseURL }}/{{ $logo_path }}" alt="{{ .Title }}" width="300">
                         </div>
-                    </section>
-            </div>
-
-    		{{ "<!-- Contact -->" | safeHTML}}
-    			{{ if .Site.Params.Contact.enable }}
-    				{{ partial "contact.html" . }}
-    			{{ end }}
-
-        {{ "<!-- Footer -->" | safeHTML}}
-            {{ if .Site.Params.footer.enable }}
-                {{ partial "footer.html" . }}
-            {{ end }}
+                    </div>
+                    {{ else }}
+                    <header class="major">
+                        <h1>{{ .Title }}</h1>
+                    </header>
+                    {{ end }}
+                    <div class="row">
+                        <div class="8u 12u$(small)">
+                            <div style="position: relative; margin-bottom: 5%; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+                                <iframe src="//www.youtube.com/embed/{{ .Params.trailer }}?autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+                            </div>
+                        </div>
+                        <div class="4u 12u$(small)">
+                            <h4>What I did</h4>
+                            <ul class="alt">
+                                {{ range .Params.contributions }}
+                                <li>{{ . }}</li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                        <!-- Break -->
+                        <div class="8u 12u$(small)">
+                            <ul class="actions vertical">
+                                <h4>About the project</h4>
+                                <ul class="alt">
+                                    <p>{{ .Params.description | markdownify }}</p>
+                                </ul>
+                            </ul>
+                        </div>
+                        <div class="4u$ 12u$(small)">
+                            <ul class="actions vertical">
+                                {{ if isset .Params "download" }}
+                                <li><a href="{{ .Params.download }}" class="button big icon fa-download">Download</a></li>
+                                {{ end }}
+                            </ul>
+                        </div>
+                    </div>
+                    {{ .Content }}
+                </div>
+            </section>
         </div>
 
-    {{ "<!-- Scripts -->" | safeHTML}}
-        {{ partial "js.html" . }}
+        {{ "<!-- Contact -->" | safeHTML}} {{ if .Site.Params.Contact.enable }} {{ partial "contact.html" . }} {{ end }}
+        {{ "<!-- Footer -->" | safeHTML}} {{ if .Site.Params.footer.enable }} {{ partial "footer.html" . }} {{ end }}
+    </div>
 
-    </body>
+    {{ "<!-- Scripts -->" | safeHTML}} {{ partial "js.html" . }}
+
+</body>
+
 </html>
