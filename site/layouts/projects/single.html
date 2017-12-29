@@ -10,6 +10,7 @@
 
         {{ partial "nav.html" . }} {{ "<!-- Main -->" | safeHTML }}
         <div id="main" class="alt">
+            <div class="background" style="background-image: url({{ .Site.BaseURL }}/img/{{ $.RelPermalink }}/background.png);"></div>
 
             <!-- One -->
             <section id="one">

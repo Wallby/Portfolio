@@ -3614,6 +3614,8 @@
 
 	#main {
 		background-color: #2a2f4a;
+		position: relative;
+		overflow: hidden;
 	}
 
 		#main > * {
@@ -3643,6 +3645,27 @@
 		#main.alt {
 			background-color: transparent;
 			border-bottom: solid 1px rgba(212, 212, 255, 0.1);
+		}
+
+		#main .background
+		{
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			z-index: -1;
+			transform: scale(1.1);
+
+			background-size: cover;
+			background-position: center;
+			display: block;
+
+			-webkit-filter: brightness(30%) blur(3px);
+			-moz-filter: brightness(30%) blur(3px);
+			-o-filter: brightness(30%) blur(3px);
+			-ms-filter: brightness(30%) blur(3px);
+			filter: brightness(30%) blur(3px);
 		}
 
 /* Contact */
