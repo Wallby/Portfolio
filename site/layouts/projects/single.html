@@ -4,7 +4,6 @@
 {{ partial "header.html" }}
 
 <body>
-
     {{ "<!-- Wrapper -->" | safeHTML }}
     <div id="wrapper">
 
@@ -15,54 +14,67 @@
             <!-- One -->
             <section id="one">
                 <div class="inner">
-                    {{ $image_path := (printf "img/%s" $.RelPermalink) }}
-                    {{ if (fileExists (printf "static/%s/logo.png" $image_path)) }}
-                    <div class="row">
-                        <div class="12u" id="logo">
-                            <img src="{{ .Site.BaseURL }}/{{ $image_path }}/logo.png" alt="{{ .Title }}" width="300">
-                        </div>
-                    </div>
-                    {{ else }}
-                    <header class="major">
-                        <h1>{{ .Title }}</h1>
-                    </header>
-                    {{ end }}
-                    <div class="row">
-                        <div class="8u 12u$(small)">
-                            <div style="position: relative; margin-bottom: 5%; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-                              {{ if isset .Params "trailer"}}
-                                <iframe src="//www.youtube.com/embed/{{ .Params.trailer }}?autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
-                              {{ else }}
-                                <img src="{{ .Site.BaseURL }}/{{ $image_path }}/{{ .Params.poster }}" style="position: absolute; top: 0; left: 0; width: 100%;">
-                              {{ end }}
+                    <div class="intro">
+                        <!-- Title -->
+                        {{ $image_path := (printf "img/%s" $.RelPermalink) }}
+                        {{ if (fileExists (printf "static/%s/logo.png" $image_path)) }}
+                        <div class="row">
+                            <div class="12u" id="logo">
+                                <img src="{{ .Site.BaseURL }}/{{ $image_path }}/logo.png" alt="{{ .Title }}" width="300">
                             </div>
                         </div>
-                        <div class="4u 12u$(small)">
-                            <h4>What I did</h4>
-                            <ul class="alt">
-                                {{ range .Params.contributions }}
-                                <li>{{ .  | markdownify }}</li>
-                                {{ end }}
-                            </ul>
-                        </div>
-                        <!-- Break -->
-                        <div class="8u 12u$(small)">
-                            <ul class="actions vertical">
-                                <h4>About the project</h4>
+                        {{ else }}
+                        <header class="major">
+                            <h1>{{ .Title }}</h1>
+                            {{ end }}
+                        </header>
+                        <!-- Summary -->
+                        <div class="row">
+                            <div class="8u 12u$(small)">
+                                <div style="position: relative; margin-bottom: 5%; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+                                  {{ if isset .Params "trailer"}}
+                                    <iframe src="//www.youtube.com/embed/{{ .Params.trailer }}?autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+                                  {{ else }}
+                                    <img src="{{ .Site.BaseURL }}/{{ $image_path }}/{{ .Params.poster }}" style="position: absolute; top: 0; left: 0; width: 100%;">
+                                  {{ end }}
+                                </div>
+                            </div>
+                            <div class="4u 12u$(small)">
+                                <h4>What I did</h4>
                                 <ul class="alt">
-                                    <p>{{ .Params.description | markdownify }}</p>
+                                    {{ range .Params.contributions }}
+                                    <li>{{ .  | markdownify }}</li>
+                                    {{ end }}
                                 </ul>
-                            </ul>
-                        </div>
-                        <div class="4u$ 12u$(small)">
-                            <ul class="actions vertical">
-                                {{ if isset .Params "download" }}
-                                <li><a href="{{ .Params.download }}" class="button big icon fa-download">Download</a></li>
-                                {{ end }}
-                            </ul>
+                            </div>
+                            <!-- Break -->
+                            <div class="8u 12u$(small)">
+                                <ul class="actions vertical">
+                                    <h4>About the project</h4>
+                                    <ul class="alt">
+                                        <p>{{ .Params.description | markdownify }}</p>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <div class="4u$ 12u$(small)">
+                                <ul class="actions vertical">
+                                    {{ if isset .Params "download" }}
+                                    <li><a href="{{ .Params.download }}" class="button big icon fa-download">Download</a></li>
+                                    {{ end }}
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    {{ .Content }}
+                    <a href="#two" id="scroll-notification" class="button scrolly">
+                      <span class="icon fa-arrow-down"></span>
+                      Read more
+                      <span class="icon fa-arrow-down"></span>
+                    </a>
+                    <div id="two" class="row">
+                      <div class="12u$">
+                        {{ .Content }}
+                      </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -72,6 +84,25 @@
     </div>
 
     {{ "<!-- Scripts -->" | safeHTML}} {{ partial "js.html" . }}
+    <script type="text/javascript">
+      function isScrollHidden() {
+        return $(window).scrollTop() > 50;
+      }
+
+      if(isScrollHidden())
+      {
+        $('#scroll-notification').hide();
+      }
+
+      $(window).bind('scroll', function() {
+         if (isScrollHidden()) {
+           $('#scroll-notification').fadeOut(200);
+         }
+         else {
+           $('#scroll-notification').fadeIn(200);
+         }
+      });
+    </script>
 
 </body>
 

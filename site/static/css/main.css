@@ -3627,12 +3627,11 @@
 			}
 
 			#main > * > .inner {
-				padding: 2em 0 2em 0 ;
+				padding: 1em 0 2em 0 ;
 				margin: 0 auto;
 				max-width: 50em;
 				width: calc(100% - 6em);
 			}
-
 				@media screen and (max-width: 736px) {
 
 					#main > * > .inner {
@@ -3640,6 +3639,10 @@
 						width: calc(100% - 3em);
 					}
 
+				}
+
+				#main > * > * > .intro {
+					height: calc(100vh - 4.25em); /* subtract menu bar and padding */
 				}
 
 		#main.alt {
@@ -4037,3 +4040,18 @@
         max-width: 300px;
     }
 }
+
+/* Scroll notification */
+#scroll-notification {
+		position: fixed;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+}
+
+	@media screen and (max-width: 736px) {
+		#scroll-notification {
+			left: 4em;
+			visibility: hidden;
+		}
+	}
