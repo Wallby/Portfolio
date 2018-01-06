@@ -48,7 +48,11 @@
                                 </ul>
                             </div>
                             <!-- Break -->
+                            {{ if isset .Params "download" }}
                             <div class="8u 12u$(small)">
+                            {{ else }}
+                            <div class="12u">
+                            {{ end }}
                                 <ul class="actions vertical">
                                     <h4>About the project</h4>
                                     <ul class="alt">
