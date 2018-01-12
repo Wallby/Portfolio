@@ -1,16 +1,17 @@
 ---
 title: "AGR"
+tools: [
+  "Visual Studio",
+  "HacknPlan"
+]
 description: "A game built on top of a custom engine written in C++ running on both the Windows 10 and PS4 platforms. AGR is a high-speed racer player locally with up to four players. Made for educational purposes whilst following the [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html) course at the NHTV in Breda, Netherlands."
 slug: "agr"
 trailer: GQLV4ADYe18
 keywords: "engine cross-platform PS4 Windows"
 contributions: [
   "Shadow mapping",
-  "PS4 development",
-  "Particle simulation and rendering",
-  "Standalone particle editor",
+  "Particle systems and editor",
   "Cube map reflections and skybox",
-  "Graphics programming",
   ]
 date: 2017-10-31T21:28:43-05:00
 draft: false

@@ -1,5 +1,9 @@
 ---
 title: "Project Sulphur"
+tools: [
+  "Visual Studio",
+  "Jira"
+]
 description: "A lightweight game engine written in C++ whose main selling-points include user-friendliness, rapid iteration, and speed. Find out more on [the website](http://projectsulphur.com/). Made for educational purposes whilst following the [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html) course at the NHTV in Breda, Netherlands."
 slug: "project_sulphur"
 poster: "posters.jpg"

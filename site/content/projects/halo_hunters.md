@@ -1,11 +1,14 @@
 ---
 title: "Halo Hunters"
+tools: [
+  "Unreal Engine",
+  "HacknPlan"
+]
 description: "The third and last of a total of three sequential game marmalades (2 week game jams). Halo Hunters is an arena shooter played locally with up to four players. The goal is to  be the first to reach a reappearing checkpoint whilst simultaneously fending off and/or chasing other players using your weapons and available pickups. Also see [the second](../mayor). Made for educational purposes whilst following the [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html) course at the NHTV in Breda, Netherlands."
 slug: "halo_hunters"
 trailer: L2am8XveP2I
 keywords: "game marmalade"
 contributions: [
-  "Gameplay programming",
   "Homing missile pickup",
   "Local-Multiplayer"
 ]

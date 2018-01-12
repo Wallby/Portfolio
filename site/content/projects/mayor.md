@@ -1,5 +1,9 @@
 ---
 title: "Mayor"
+tools: [
+  "Unreal Engine",
+  "HacknPlan"
+]
 description: "The second of a total of three sequential game marmalades (2 week game jams). Mayor is a management game in which the player acts as the mayor of a big city plagued by the mafia and everyday problems. Also see [the third](../halo_hunters). Made for educational purposes whilst following the [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html) course at the NHTV in Breda, Netherlands."
 slug: "mayor"
 trailer: WXgxsMuIlmc
@@ -7,7 +11,6 @@ keywords: "game marmalade Unity"
 contributions: [
   "Scrum facilitation (Scrum Master)",
   "Tool creation in Excel",
-  "Gameplay programming",
   "Traffic system",
   ]
 date: 2017-10-31T21:28:43-05:00
@@ -34,7 +37,7 @@ Like the communication, planning went very poorly during the first marmalade. On
 ## Traffic system
 <div class="row">
 <p class="6u 12u$(small)">
-Because of my responsibility as Scrum Master I allowed myself to work only on aesthetic tasks to not bottleneck the game development. As the city layout I was provided with was far from grid-like, I settled on a node-based system, which made it very flexible. The smooth car movement was achieved using some clever tricks to fake acceleration/deceleration. 
+Because of my responsibility as Scrum Master I allowed myself to work only on aesthetic tasks to not bottleneck the game development. As the city layout I was provided with was far from grid-like, I settled on a node-based system, which made it very flexible. The smooth car movement was achieved using some clever tricks to fake acceleration/deceleration.
 </p>
 <p class="6u 12u$(small)" style="text-align: center;">
 <img style="max-width: 400px;" src="/img/projects/mayor/traffic.gif" width=100%>
