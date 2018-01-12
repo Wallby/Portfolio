@@ -25,9 +25,9 @@
                         </div>
                         {{ else }}
                         <header class="major">
-                            <h1>{{ .Title }}</h1>
-                            {{ end }}
+                          <h1>{{ .Title }}</h1>
                         </header>
+                        {{ end }}
                         <!-- Summary -->
                         <div class="row">
                             <div class="8u 12u$(small)">
@@ -47,6 +47,29 @@
                                     {{ end }}
                                 </ul>
                             </div>
+                            {{ if isset .Params "tools" }}
+                            <div class="4u 12u$(small)">
+                                <h4>What I used</h4>
+                                {{ $global := . }}
+                                {{ range .Params.tools }}
+                                    {{ if eq . "Unity"}}
+                                    <a class="image" href="https://unity3d.com/"><img src="{{ $global.Site.BaseURL }}/img/unity.png" alt="" style="height: 64px; margin-right: 10px"></a>
+                                    {{ end }}
+                                    {{ if eq . "Unreal Engine"}}
+                                    <a class="image" href="https://www.unrealengine.com/en-US/blog"><img src="{{ $global.Site.BaseURL }}/img/unreal_engine.png" alt="" style="height: 64px; margin-right: 10px"></a>
+                                    {{ end }}
+                                    {{ if eq . "Visual Studio"}}
+                                    <a class="image" href="https://www.visualstudio.com/"><img src="{{ $global.Site.BaseURL }}/img/visual_studio.png" alt="" style="height: 64px; margin-right: 10px"></a>
+                                    {{ end }}
+                                    {{ if eq . "HacknPlan"}}
+                                    <a class="image" href="https://www.hacknplan.com/"><img src="{{ $global.Site.BaseURL }}/img/hacknplan.png" alt="" style="height: 64px; margin-right: 10px"></a>
+                                    {{ end }}
+                                    {{ if eq . "Jira"}}
+                                    <a class="image" href="https://www.jira.com/"><img src="{{ $global.Site.BaseURL }}/img/jira.png" alt="" style="height: 64px; margin-right: 10px"></a>
+                                    {{ end }}
+                                {{ end }}
+                            </div>
+                            {{ end }}
                             <!-- Break -->
                             {{ if isset .Params "download" }}
                             <div class="8u 12u$(small)">
