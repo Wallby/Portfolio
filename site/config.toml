@@ -8,13 +8,6 @@ theme = "forty"
 googleAnalytics = ""
 
 [params]
-  # You can use Markdown syntax for urls [text](//url.to/source)
-  # To create multi-line text in strings use the """example Text""" format
-  #
-  # All icons using Fontawesome's icon font. Look at fontawesome.io/icons
-  # for more icons. The icons are represented by their corresponding
-  # CSS class.
-
   # Provide your metadata here.
   name = "Maarten ten Velden"
   description = "Your description"
@@ -44,21 +37,21 @@ googleAnalytics = ""
       name = "Home"
       url = "#"
 
+    #[[params.navigation.links]]
+    #  name = "Blog"
+    #  url = "blogs"
+
     [[params.navigation.links]]
-      name = "Blog"
-      url = "blogs"
+      name = "Contact"
+      url = "page/contact"
 
     [[params.navigation.links]]
       name = "About me"
       url = "page/about"
 
-    [[params.navigation.button1]]
-      name = "What I can do"
-      url = "projects"
-
-    [[params.navigation.button2]]
-      name = "Download my CV"
-      url = "cv.pdf"
+    #[[params.navigation.button2]]
+    #  name = "Download my CV"
+    #  url = "cv.pdf"
 
 
   # Banner section
@@ -66,9 +59,20 @@ googleAnalytics = ""
     # To change the background image on the homepage banner, replace 'banner.jpg' in
     # the 'static/img' folder.
     title = "Hi, my name is Maarten"
-    subtitle = "A passionate real-time application programmer, also a great cook"
+    subtitle = "And I am currently working hard to find myself"
     buttonText = "Read more"
 
+  # Section Type Two
+  [params.two]
+    enable = true
+    title = "About me"
+    subtitle = """In short, I have a love for programming, but I am not a 100%
+    sure yet what course my life will take. If you are really interested and
+    want to know more about me, you can find out more by clicking the button
+    below. Or alternative you can send me an message if you want to ask me
+    something directly."""
+    buttonText = "Tell me more"
+    url = "page/about"
 
   # Tiles Section
   [params.tiles]
@@ -106,10 +110,10 @@ googleAnalytics = ""
       url = "projects/barock_battles"
 
     [[params.tiles.showcase]]
-      title = "See more..."
-      subtitle = "I have tons of personal projects too"
+      title = "More to be added soon..."
+      subtitle = "Check back in a while to see more cool stuff"
       image = "pic05.jpg"
-      url = "404.html"
+      url = "#"
 
     # You can make more showcases by copy and pasting the code above
 
@@ -120,44 +124,14 @@ googleAnalytics = ""
     # For more informtion take a look at the README.
     # To add more blogs just copy and paste the code.
 
-  # Section Type Two
-  [params.two]
-    enable = true
-    title = "About me"
-    subtitle = """You are looking at the proud achievements of Maarten ten Velden:
-    a pragmatic and highly passionate programmer with experience in real-time
-    applications written in C++, games development and software development
-    methodologies. Programming is my passion, as well is classical and jazz
-    piano, guitar, cooking, and a healthy lifestyle through meditation and
-    self-inquiry. I am always looking to challenge myself in news ways. One of my
-    big beliefs is that learning works through repetitive failure, and sooner
-    rather than later."""
-    buttonText = "My achievements"
-    url = "projects"
-
-
   # Contact section
   [params.contact]
     enable = true
     buttonSend = "Send message"
     buttonClear = "Clear"
-
-    # Since this template is static, the contact form uses www.formspree.io as a
-    # proxy. The form makes a POST request to their servers to send the actual
-    # email. Visitors can send up to a 1000 emails each month for free.
-    #
-    # What you need to do for the setup?
-    #
-    # - set your email address under 'email' below and uncomment
-    # - upload the generated site to your server
-    # - send a dummy email yourself to confirm your account
-    # - click the confirm link in the email from www.formspree.io
-    # - you're done. Happy mailing!
-    # formEmail = "example@domain.com"
+    formEmail = "maartentenvelden@hotmail.com"
 
     # Contact Section
-    # You can add multiple emails, phone numbers, or addresses
-    # by copying the corresponding map with frontmatter code.
     [[params.contact.email]]
     title = "Email"
     email = "maartentenvelden@hotmail.com"
