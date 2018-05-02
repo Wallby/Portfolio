@@ -7,4 +7,4 @@ showContact: true
 draft: false
 ---
 
-If you want to talk to me, offer me a work placement you can contact me using the form below or use any of the other provided mediums. In the case that you just want to ask me a general question or something less formal feel free to send me an message too.
+Feel free to ask me anything. Anything? Yes, anything (though it would be much appreciated if you do not harass me).

@@ -29,11 +29,14 @@
                 <section id="two" class="spotlights">
                     {{ range .Pages }}
                     <section>
+                        <!--
                         <a href="{{ .Slug }}" class="image">
 							              <img src="{{ .Site.Params.baseURL }}/img/projects/{{ .Params.image }}" alt="" data-position="center center" />
 						            </a>
+
+                                -->
                         <div class="content">
-                            <div class="inner">
+                            <div class="inner" style="background: url({{ .Site.Params.baseURL }}/img/projects/{{.Params.slug}}/background.png) center contain">
                                 <header class="major">
                                     <h3>{{ .Title }}</h3>
                                 </header>

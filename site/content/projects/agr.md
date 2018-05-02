@@ -4,35 +4,25 @@ tools: [
   "Visual Studio",
   "HacknPlan"
 ]
-description: "A game built on top of a custom engine written in C++ running on both the Windows 10 and PS4 platforms. AGR is a high-speed racer player locally with up to four players. Made for educational purposes whilst following the [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html) course at the NHTV in Breda, Netherlands."
+description: "A game built using a custom engine made in the third year of my
+game development bachelor at  [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html). The engine was written completely in C++ over a period of 16 weeks and runs
+on both Windows and PS4. The game AGR, an anti-grav racer, was made in unison
+with the development of the tech. As a graphics programmer I setup the
+foundations for cross-platform rendering and implement several effects,
+including shadow mapping."
 slug: "agr"
-trailer: GQLV4ADYe18
+#trailer: GQLV4ADYe18 #< This is the official trailer, which doesn't include many of the FX
+trailer: qtfIpzz7y7w
 keywords: "engine cross-platform PS4 Windows"
 contributions: [
-  "Shadow mapping",
-  "Particle systems and editor",
-  "Cube map reflections and skybox",
+  "Shadow mapping in DX11 and GNMX",
+  "Particle systems in DX11 and GNMX",
+  "Particle system editor with preview",
+  "Cube mapped reflections and skybox in DX11 and GNMX",
   ]
 date: 2017-10-31T21:28:43-05:00
 draft: false
 ---
-
-# What I learned
-During the 2 months that this project lasted, I learned graphics programming and PS4 development through hands-on practical experience. The project started with a team of 6 given 1 month to develop an engine, followed up by a month were the team grew to 20 (including artist, designers and programmers) and were development of the engine continued concurrently to the development of a game.
-
-* __<span style="color:#00ff99">Practical and quick</span>__  
-The first month of isolated development meant that the engine hadn't been tested too often. However, with our limited knowledge and manpower we managed to deliver a fully functional and playable game.
-
-* __<span style="color:#00ff99">Cross-platform</span>__  
-Maintaining multiple platforms and building an architecture to support was not just challenging, but it also gave me the opportunity to implement graphics techniques twice (on different platforms) which tested my knowledge thoroughly.
-
-* __<span style="color:#ff6666">Scoping, prioritization and QA</span>__  
-I was quite over-optimistic in my estimating and the majority of the developers in this team showed the same symptoms. We thought we could do far more than we actually could. As a result some features never (fully) made it into the final product.
-
-* __<span style="color:#ff6666">CASE tools</span>__  
-Most of the tools we used were those that we had already used before. No dedicated research into better solutions meant that our development process suffered from redundancy.
-
-# What I made
 
 ## Shadow mapping
 <div class="row">

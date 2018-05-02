@@ -33,7 +33,7 @@
                             <div class="8u 12u$(small)">
                                 <div style="position: relative; margin-bottom: 5%; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
                                   {{ if isset .Params "trailer"}}
-                                    <iframe src="//www.youtube.com/embed/{{ .Params.trailer }}?autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0" title="YouTube Video"></iframe>
+                                    <iframe title="YouTube Video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube-nocookie.com/embed/{{ .Params.trailer }}?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen frameborder="0"></iframe>
                                   {{ else }}
                                     <img src="{{ .Site.BaseURL }}/{{ $image_path }}/{{ .Params.poster }}" style="position: absolute; top: 0; left: 0; width: 100%;">
                                   {{ end }}
@@ -92,11 +92,13 @@
                             </div>
                         </div>
                     </div>
+                    {{ if gt .Content 0 }}
                     <a href="#two" id="scroll-notification" class="button scrolly">
                       <span class="icon fa-arrow-down"></span>
                       Read more
                       <span class="icon fa-arrow-down"></span>
                     </a>
+                    {{ end }}
                     <div id="two" class="row">
                       <div class="12u$">
                         {{ .Content }}

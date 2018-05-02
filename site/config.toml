@@ -7,6 +7,11 @@ theme = "forty"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
 
+#[taxonomies]
+#    tag = "tags"
+#    category = "categories"
+#    keywords = "keywords"
+
 [params]
   # Provide your metadata here.
   name = "Maarten ten Velden"
@@ -27,8 +32,8 @@ googleAnalytics = ""
 
   # Navigation Section
   [params.navigation]
-    title = "Portfolio"
-    subtitle = "of Maarten ten Velden"
+    title = "Maarten"
+    subtitle = "Creator of Games"
     menu = "Menu"
     # Optional logo as brand stored in img/
     # logo = "logo.png"
@@ -59,18 +64,14 @@ googleAnalytics = ""
     # To change the background image on the homepage banner, replace 'banner.jpg' in
     # the 'static/img' folder.
     title = "Hi, my name is Maarten"
-    subtitle = "And I am currently working hard to find myself"
+    subtitle = "This site is currently under construction..."
     buttonText = "Read more"
 
   # Section Type Two
   [params.two]
     enable = true
     title = "About me"
-    subtitle = """In short, I have a love for programming, but I am not a 100%
-    sure yet what course my life will take. If you are really interested and
-    want to know more about me, you can find out more by clicking the button
-    below. Or alternative you can send me an message if you want to ask me
-    something directly."""
+    subtitle = """If you would ask me how I see myself I would tell you that I am an open-minded guy who loves anything that is artistic. In my personal life, this is expressed by my love for reading and playing the piano. Currently, I study programming and design for games at the NHTV in Breda, which I have been doing for the past three years now. Since I began my game-development journey I have made quite a few games. Just for you, I have collected some of my best work (so far) on this page (scroll down to see them). Send me a personal message to ask me literally anything (you can find contact information at the bottom of every page). Want to know more about who I am? Read more about my personal story by pressing the big button below (the one that says "tell me more")."""
     buttonText = "Tell me more"
     url = "page/about"
 
@@ -81,39 +82,33 @@ googleAnalytics = ""
 
     [[params.tiles.showcase]]
       title = "Project Sulphur"
-      subtitle = "A cross-platform custom engine written in C++"
+      subtitle = "A custom engine for Windows and PS4 written in C++"
       image = "project_sulphur.jpg"
       url = "projects/project_sulphur"
 
     [[params.tiles.showcase]]
       title = "AGR"
-      subtitle = "A cross-platform racing game and engine written in C++"
+      subtitle = "An anti-grav racer built in a custom engine for Windows and PS4 written in C++"
       image = "agr.png"
       url = "projects/agr"
 
     [[params.tiles.showcase]]
       title = "Mayor"
-      subtitle = "An atmospheric city management game made in two weeks"
+      subtitle = "An atmospheric city management game made in two and a half weeks"
       image = "mayor.jpg"
       url = "projects/mayor"
 
     [[params.tiles.showcase]]
       title = "Halo Hunters"
-      subtitle = "A fast-paced flight combat game made in two weeks"
+      subtitle = "A fast-paced shooter made in two weeks"
       image = "halo_hunters.png"
       url = "projects/halo_hunters"
 
     [[params.tiles.showcase]]
       title = "BaRock Battles"
-      subtitle = "An award-winning musical arena party game made for the global jam"
+      subtitle = "A party game made for the Global Jam of 2016"
       image = "barock_battles.png"
       url = "projects/barock_battles"
-
-    [[params.tiles.showcase]]
-      title = "More to be added soon..."
-      subtitle = "Check back in a while to see more cool stuff"
-      image = "pic05.jpg"
-      url = "#"
 
     # You can make more showcases by copy and pasting the code above
 

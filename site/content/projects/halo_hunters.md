@@ -4,28 +4,17 @@ tools: [
   "Unreal Engine",
   "HacknPlan"
 ]
-description: "The third and last of a total of three sequential game marmalades (2 week game jams). Halo Hunters is an arena shooter played locally with up to four players. The goal is to  be the first to reach a reappearing checkpoint whilst simultaneously fending off and/or chasing other players using your weapons and available pickups. Also see [the second](../mayor). Made for educational purposes whilst following the [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html) course at the NHTV in Breda, Netherlands."
+description: "Halo Hunters is an arena shooter played locally with up to four players made in the third year of my game development bachelor at  [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html). The game was made from concept to final product in a period of two weeks as part of a so-called game marmalade (i.e. an extended game jam). Another marmalade game is [Mayor](../mayor)."
 slug: "halo_hunters"
 trailer: L2am8XveP2I
-keywords: "game marmalade"
+keywords: ["game marmalade"]
 contributions: [
-  "Homing missile pickup",
-  "Local-Multiplayer"
+  "Homing missile in Blueprints",
+  "Local multiplayer in Blueprints and C++"
 ]
 date: 2017-10-31T21:28:43-05:00
 draft: false
 ---
-
-# What I learned
-After working around the clock as a Scrum Master for the two marmalades before this one, I decided to spend the last one doing regular programming work. This not only allowed me to reduce stress, it also allowed me to learn from observing someone else performing the role I previously fulfilled, forcing me to reflect on my past choices and approaches.
-
-* __<span style="color:#00ff99">Unreal Engine</span>__  
-As this was my first chance to work full-time as a programmer using Unreal Engine 4, I am confident in saying that this marmalade has taught me a great deal of what I know now about the engine. Furthermore, it showed me how easy it is for a project that uses a visual scripting language (UE4's Blueprints)  to lose all forms of logical structure.
-
-* __<span style="color:#ff6666">Assertiveness</span>__  
-Something I have struggled with in the past is assertiveness. Before this project, I was convinced that a harsh Scrum Master would ruin the team's atmosphere. By observing the replacement Scrum Master, I noticed that this prejudice was completely faulty. As a clear structure (and, of course, a humane approach) seemed to only increase the team-spirit. This inspired me greatly and I have since worked immensely on my honesty and courage.
-
-# What I made
 
 ## Homing missile
 <div class="row">
