@@ -7,4 +7,4 @@ showContact: true
 draft: false
 ---
 
-Feel free to ask me anything. Anything? Yes, anything (though it would be much appreciated if you do not harass me).
+Feel free to ask me anything.

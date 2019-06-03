@@ -7,4 +7,4 @@ showContact: false
 draft: false
 ---
 
-Woops... I have to apologize. There is nothing here yet! If you really want to know you can always [ask me directly](../contact).
+Actually... there is nothing here yet. If you really want to know something you can always [ask me directly](../contact).
