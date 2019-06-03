@@ -15,7 +15,7 @@ googleAnalytics = ""
 [params]
   # Provide your metadata here.
   name = "Maarten ten Velden"
-  description = "Your description"
+  description = "Creative Engineer"
 
   # Link custom assets relative to /static
   custom_css = []
@@ -32,7 +32,7 @@ googleAnalytics = ""
   # Navigation Section
   [params.navigation]
     title = "Maarten"
-    subtitle = "Creator of Games"
+    subtitle = "Creative Engineer"
     menu = "Menu"
     # Optional logo as brand stored in img/
     # logo = "logo.png"
