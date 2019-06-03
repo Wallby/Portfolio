@@ -126,25 +126,15 @@ googleAnalytics = ""
     buttonClear = "Clear"
     formEmail = "maartentenvelden@hotmail.com"
 
-    # Contact Section
-    [[params.contact.email]]
-    title = "Email"
-    email = "maartentenvelden@hotmail.com"
-
-    [[params.contact.phone]]
-    title = "Phone"
-    phone = "(31) 6 28196052"
-
-    [[params.contact.address]]
-    title = "Address"
-    street = "Nieuwstraat 40D"
-    city = "Breda, 4811 WV"
-    country = "Netherlands"
-
   # Footer section
   [params.footer]
     enable = true
     copyright = "Maarten ten velden"
+
+    [[params.footer.social]]
+      icon = "fa-envelope"
+      url= "mailto:info@maartentenvelden.nl"
+      label = "Email"
 
     [[params.footer.social]]
       icon = "fa-github"
@@ -160,8 +150,3 @@ googleAnalytics = ""
       text = "Design: "
       url= "https://www.html5up.net"
       alt = "HTML5 UP"
-
-    [[params.footer.quicklinks]]
-      text = "Email me: "
-      url= "mailto:maartentenvelden@hotmail.com"
-      alt = "maartentenvelden@hotmail.com"
