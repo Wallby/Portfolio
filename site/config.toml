@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "http://www.maartentenvelden.nl"
+baseURL = "//www.maartentenvelden.nl"
 languageCode = "en-us"
 title = "Maarten ten Velden"
 theme = "forty"
