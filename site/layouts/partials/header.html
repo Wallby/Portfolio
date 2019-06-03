@@ -19,10 +19,13 @@
 	{{ "<!-- Custom Fonts -->" | safeHTML }}
 	<link href="{{ "css/font-awesome.min.css" | absURL }}" rel="stylesheet" type="text/css">
 
-	{{ with .Site.Params.favicon }}
-	<link rel="shortcut icon" type="image/x-icon" href="{{ . | absURL }}">
-	<link rel="icon" type="image/x-icon" href="{{ . | absURL }}">
-	{{ end }}
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | absURL }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon-32x32.png" | absURL }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicon-16x16.png" | absURL }}">
+	<link rel="manifest" href="{{ "/site.webmanifest" | absURL }}">
+	<link rel="mask-icon" href="{{ "/safari-pinned-tab.svg" | absURL }}" color="#2a2f4a">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#2a2f4a">
 
 	{{ "<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->" | safeHTML }}
 	{{ "<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->" | safeHTML }}
