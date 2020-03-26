@@ -1,42 +1,58 @@
 <!DOCTYPE HTML>
 <html>
 
-    {{ partial "header.html"  }}
-    <body>
+{{ partial "header.html"  }}
 
-    {{ "<!-- Wrapper -->" | safeHTML }}
-        <div id="wrapper">
+<body>
 
-            {{ partial "nav.html" . }}
+  {{ "<!-- Wrapper -->" | safeHTML }}
+  <div id="wrapper">
 
-        {{ "<!-- Main -->" | safeHTML }}
-            <div id="main" class="alt">
+    {{ partial "nav.html" . }}
 
-                <!-- One -->
-                    <section id="one">
-                        <div class="inner">
-                            <header class="major">
-                                <h1>{{ .Title}}</h1>
-                            </header>
-                            <span class="image main"><img src="{{ .Site.Params.baseURL }}/img/blogs/{{ .Params.image }}" alt="" /></span>
-                            {{ .Content }}
-                        </div>
-                    </section>
-            </div>
-            
-        {{ "<!-- Contact -->" | safeHTML}}
-        {{ if .Params.showContact }}
-        	{{ partial "contact.html" . }}
-        {{ end }}
+    {{ "<!-- Main -->" | safeHTML }}
+    <div id="main" class="alt">
 
-        {{ "<!-- Footer -->" | safeHTML}}
-            {{ if .Site.Params.footer.enable }}
-                {{ partial "footer.html" . }}
+      <!-- One -->
+      <section id="one">
+        <div class="inner">
+          <header class="major">
+            <h1>{{ .Title}}</h1>
+          </header>
+          <span class="image main"><img src="{{ .Site.Params.baseURL }}/img/{{ .Params.image }}" alt="" /></span>
+          {{ .Content }}
+
+          {{ "<!-- Technologies -->" | safeHTML}}
+          {{ if .Params.listTechnologies }}
+          <p>Technologies that I use...</p>
+          <ul style="list-style: none">
+            {{ range $j := $.Site.Params.technologies }}
+            <li style="padding-bottom: 10px">
+              <a style="vertical-align: middle" class="image" href="{{ $j.url }}"><img src=" {{ $.Site.BaseURL }}/{{ $j.image }}" alt="" style="height: 64px; margin-right: 10px"></a>
+              <span>{{ $j.name }}</span>
+            </li>
             {{ end }}
+          </ul>
+          {{ end }}
         </div>
+      </section>
+    </div>
 
-    {{ "<!-- Scripts -->" | safeHTML}}
-        {{ partial "js.html" . }}
+    {{ "<!-- Contact -->" | safeHTML}}
+    {{ if .Params.showContact }}
+    {{ partial "contact.html" . }}
+    {{ end }}
 
-    </body>
+    {{ "<!-- Footer -->" | safeHTML}}
+    {{ if .Site.Params.footer.enable }}
+    {{ partial "footer.html" . }}
+    {{ end }}
+  </div>
+
+
+  {{ "<!-- Scripts -->" | safeHTML}}
+  {{ partial "js.html" . }}
+
+</body>
+
 </html>
