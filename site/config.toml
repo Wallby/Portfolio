@@ -92,7 +92,7 @@ theme = "forty"
     # To change the background image on the homepage banner, replace 'banner.jpg' in
     # the 'static/img' folder.
     title = "Hi, my name is Maarten"
-    subtitle = "This site is currently under construction..."
+    subtitle = "freelancer, game developer, electronics guy"
     buttonText = "Read more"
 
   # Tiles Section
@@ -155,16 +155,16 @@ theme = "forty"
       icon = "fa-envelope"
       url= "mailto:info@maartentenvelden.nl"
       label = "Email"
-
-    [[params.footer.social]]
-      icon = "fa-github"
-      url= "https://www.github.com/Wallby"
-      label = "GitHub"
-
+      
     [[params.footer.social]]
       icon = "fa-linkedin"
       url= "https://www.linkedin.com/in/maarten-ten-velden/"
       label = "LinkedIn"
+            
+    [[params.footer.social]]
+      icon = "fa-github"
+      url= "https://www.github.com/Wallby"
+      label = "GitHub"
 
     [[params.footer.quicklinks]]
       text = "Design: "
