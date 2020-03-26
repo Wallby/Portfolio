@@ -15,7 +15,38 @@ theme = "forty"
 
   # Just a custom image variable, please define it in .md files for content.
   image = ""
-
+  
+  # Technologies
+  [[params.technologies]]
+    name = "Unity"
+    url = "https://unity3d.com/"
+    image = "/img/unity.png"
+    using = true
+    
+  [[params.technologies]]
+    name = "Unreal Engine"
+    url = "https://www.unrealengine.com/en-US/blog"
+    image = "/img/unreal_engine.png"
+    using = true
+    
+  [[params.technologies]]
+    name = "Visual Studio"
+    url = "https://www.visualstudio.com/"
+    image = "/img/visual_studio.png"
+    using = true
+    
+  [[params.technologies]]
+    name = "HacknPlan"
+    url = "https://www.hacknplan.com/"
+    image = "/img/hacknplan.png"
+    using = true
+    
+  [[params.technologies]]
+    name = "Jira"
+    url = "https://www.jira.com/"
+    image = "/img/jira.png"
+    using = true
+  
   # 404 error customization
   [params.error404]
     heading = "Page couldn't be found"
