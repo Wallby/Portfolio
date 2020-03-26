@@ -58,14 +58,6 @@ theme = "forty"
     subtitle = "This site is currently under construction..."
     buttonText = "Read more"
 
-  # Section Type Two
-  [params.two]
-    enable = true
-    title = "About me"
-    subtitle = """If you would ask me how I see myself I would tell you that I am an open-minded guy who loves anything that is artistic. In my personal life, this is expressed by my love for reading and playing the piano. Currently, I study programming and design for games at the NHTV in Breda, which I have been doing for the past three years now. Since I began my game-development journey I have made quite a few games. Just for you, I have collected some of my best work (so far) on this page (scroll down to see them). Send me a personal message to ask me literally anything (you can find contact information at the bottom of every page). Want to know more about who I am? Read more about my personal story by pressing the big button below (the one that says "tell me more")."""
-    buttonText = "Tell me more"
-    url = "page/about"
-
   # Tiles Section
   [params.tiles]
     enable = true
