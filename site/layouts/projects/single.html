@@ -102,6 +102,12 @@
     {{ "<!-- Footer -->" | safeHTML}} {{ if .Site.Params.footer.enable }} {{ partial "footer.html" . }} {{ end }}
   </div>
 
+  <!-- Styling for content -->
+  <style>
+    p>img {
+      border: 2px solid white;
+    }
+  </style>
 
   {{ "<!-- Scripts -->" | safeHTML}} {{ partial "js.html" . }}
   <script type="text/javascript">
