@@ -46,6 +46,12 @@ theme = "forty"
     url = "https://www.jira.com/"
     image = "/img/jira.png"
     using = true
+    
+  [[params.technologies]]
+    name = "Git"
+    url = "https://www.git-scm.com/"
+    image = "/img/git.png"
+    using = true
   
   # 404 error customization
   [params.error404]
