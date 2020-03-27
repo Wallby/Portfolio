@@ -1,0 +1,22 @@
+/* Contact */
+
+		#contact > .inner > :nth-child(2n - 1) {
+			padding: 3em 0 1em 0 ;
+			border-right: none;
+			width: 100%;
+		}
+
+
+		@media screen and (max-width: 980px) {
+			#contact > .inner > :nth-child(2n - 1) {
+				padding: 3em 0 1em 0 ;
+			}
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#contact > .inner > :nth-child(2n - 1) {
+				padding: 3em 0 1em 0 ;
+			}
+
+		}

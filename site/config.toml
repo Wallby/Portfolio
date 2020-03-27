@@ -10,7 +10,7 @@ theme = "forty"
   description = "Creative Engineer"
 
   # Link custom assets relative to /static
-  custom_css = []
+  custom_css = ["css/main_overrides.css"]
   custom_js  = []
 
   # Just a custom image variable, please define it in .md files for content.
