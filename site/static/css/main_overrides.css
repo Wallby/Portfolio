@@ -1,3 +1,22 @@
+/* Tiles */
+
+	/* last-child = "Your Project" box */
+	.tiles article:last-child header {
+		margin-right: 0;
+	}
+	.tiles article:last-child img {
+		margin-right: auto;
+	}
+	.tiles article:last-child:before {
+		background-color: transparent;
+	}
+	
+	@media screen and (max-width: 736px) {
+		.tiles article:last-child img {
+			width: 80px;
+		}
+	}
+
 /* Contact */
 
 		#contact > .inner > :nth-child(2n - 1) {

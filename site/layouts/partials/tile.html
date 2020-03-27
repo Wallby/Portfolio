@@ -1,0 +1,22 @@
+{{ "<!-- Header -->" | safeHTML }}
+<section id="one" class="tiles">
+  {{ range .Site.Params.Tiles.showcase }}
+  <article>
+    <span class="image">
+      <img src="{{ .Site.Params.baseURL }}img/{{ .image }}" alt="" />
+    </span>
+    <header class="major">
+      <h3><a href="{{ .url | absURL }}" class="link">{{ .title }}</a></h3>
+      <p>{{ .subtitle }}</p>
+    </header>
+  </article>
+  {{ end }}
+  <article>
+    <!-- NOTE: keep this as the last element so that it doesn't look weird -->
+    <header class="major">
+      <h3>Your Project</h3>
+      <p>contact me?</p>
+    </header>
+    <img style="margin-left: 1em; padding-top: 7em; float: right" src="{{ .Site.Params.baseURL }}img/arrow.png" alt="" />
+  </article>
+</section>
