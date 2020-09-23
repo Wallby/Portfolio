@@ -8,3 +8,7 @@ draft: false
 ---
 
 Feel free to ask me anything.
+
+I am interested in...  
+[x] freelance work  
+[x] contract work  

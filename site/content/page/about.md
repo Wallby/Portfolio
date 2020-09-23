@@ -11,10 +11,6 @@ draft: false
 <div class="row">
 <p class="6u 12u$(small)">
 I'm a freelancer and a game developer. I have made games in pure C++, Unity, UE4, and for VR. Oh, and did I mention that I know Haskell? I can do a bit of 3D modeling, which helps me look at problems differently.
-
-I am interested in...
-* freelance work
-* contract work
 </p>
 <p class="6u 12u$(small)" style="text-align: center;">
 <img style="max-width: 250px;" src="/img/me.png" width=100%>
