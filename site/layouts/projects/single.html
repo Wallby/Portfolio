@@ -20,7 +20,7 @@
             {{ if (fileExists (printf "static/%s/logo.png" $image_path)) }}
             <div class="row">
               <div class="12u" id="logo">
-                <img src="{{ .Site.BaseURL }}/{{ $image_path }}/logo.png" alt="{{ .Title }}">
+                <img src="{{ .Site.BaseURL }}/{{ $image_path }}/logo.png" alt="{{ .Title }}" style="max-width: 100%">
               </div>
             </div>
             {{ else }}
