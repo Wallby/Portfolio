@@ -61,7 +61,7 @@ theme = "forty"
   # Navigation Section
   [params.navigation]
     title = "Maarten"
-    subtitle = "Creative Engineer"
+    # subtitle = ""
     menu = "Menu"
     # Optional logo as brand stored in img/
     # logo = "logo.png"
@@ -92,7 +92,7 @@ theme = "forty"
     # To change the background image on the homepage banner, replace 'banner.jpg' in
     # the 'static/img' folder.
     title = "Hi, my name is Maarten"
-    subtitle = "freelancer, game developer, electronics guy"
+    subtitle = "freelancer, game developer"
     buttonText = "Read more"
 
   # Tiles Section
