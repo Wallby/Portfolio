@@ -150,6 +150,7 @@ theme = "forty"
   [params.footer]
     enable = true
     copyright = "Maarten ten velden"
+    belowtext = "You can also find me on..<br> .. Steam as user Wallby<br> .. Origin as user Wallby<br> .. Mojang as user Maarten_TV<br> .. Habbo Hotel as user gangster920"
 
     [[params.footer.social]]
       icon = "fa-envelope"
