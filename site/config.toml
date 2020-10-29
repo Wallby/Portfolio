@@ -104,31 +104,31 @@ theme = "forty"
       title = "Project Sulphur"
       subtitle = "A custom engine for Windows and PS4 written in C++"
       image = "project_sulphur.jpg"
-      url = "projects/project_sulphur"
+      url = "project/project_sulphur"
 
     [[params.tiles.showcase]]
       title = "AGR"
       subtitle = "An anti-grav racer built in a custom engine for Windows and PS4 written in C++"
       image = "agr.png"
-      url = "projects/agr"
+      url = "project/agr"
 
     [[params.tiles.showcase]]
       title = "Mayor"
       subtitle = "An atmospheric city management game made in two and a half weeks"
       image = "mayor.jpg"
-      url = "projects/mayor"
+      url = "project/mayor"
 
     [[params.tiles.showcase]]
       title = "Halo Hunters"
       subtitle = "A fast-paced shooter made in two weeks"
       image = "halo_hunters.png"
-      url = "projects/halo_hunters"
+      url = "project/halo_hunters"
 
     [[params.tiles.showcase]]
       title = "BaRock Battles"
       subtitle = "A party game made for the Global Jam of 2016"
       image = "barock_battles.png"
-      url = "projects/barock_battles"
+      url = "project/barock_battles"
 
     # You can make more showcases by copy and pasting the code above
 

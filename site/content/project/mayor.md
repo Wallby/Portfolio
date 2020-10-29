@@ -29,11 +29,11 @@ The task I spent most of my non-scrum-master time on was the traffic system, int
 
 <div class="row">
 <p class="6u 12u$(small)" style="text-align: center;">
-<img style="max-width: 300px;" src="/img/projects/mayor/traffic_nodes_in_editor.png" width=100%>
+<img style="max-width: 300px;" src="/img/project/mayor/traffic_nodes_in_editor.png" width=100%>
 <br>
 <i>The traffic node gizmos as seen in the editor</i>
 <br>
-<img style="max-width: 300px;" src="/img/projects/mayor/traffic_node_inspector.png" width=100%>
+<img style="max-width: 300px;" src="/img/project/mayor/traffic_node_inspector.png" width=100%>
 <br>
 <i>The inspector view on a traffic node actor</i>
 </p>
@@ -49,7 +49,7 @@ The city layout was not entirely grid-like (though every corner is a right angle
 A central traffic manager is responsible for the spawning, updating, and despawning of the cars.
 </p>
 <p class="6u 12u$(small)" style="text-align: center;">
-<img style="max-width: 300px;" src="/img/projects/mayor/traffic_manager.png" width=100%>
+<img style="max-width: 300px;" src="/img/project/mayor/traffic_manager.png" width=100%>
 <br>
 <i>The inspector view on the traffic manager actor</i>
 </p>
@@ -59,7 +59,7 @@ A central traffic manager is responsible for the spawning, updating, and despawn
 
 <div class="row">
 <p class="6u 12u$(small)" style="text-align: center;">
-<img style="max-width: 400px;" src="/img/projects/mayor/traffic.gif" width=100%>
+<img style="max-width: 400px;" src="/img/project/mayor/traffic.gif" width=100%>
 </p>
 <p class="6u 12u$(small)">
 The car actors themselves are actually all on the center of the street, but the model itself is offset to one side (kudos to the artist who inspired this simple and neat solution).
