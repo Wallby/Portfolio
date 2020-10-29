@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "//www.maartentenvelden.nl"
+baseURL = "//www.wallby.nl"
 languageCode = "en-us"
 title = "Maarten ten Velden"
 theme = "forty"
@@ -153,7 +153,7 @@ theme = "forty"
 
     [[params.footer.social]]
       icon = "fa-envelope"
-      url= "mailto:info@maartentenvelden.nl"
+      url= "mailto:maartentenvelden@hotmail.com"
       label = "Email"
       
     [[params.footer.social]]
