@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "//www.maartentenvelden.nl"
+baseURL = "https://wallby.nl"
 languageCode = "en-us"
 title = "Maarten ten Velden"
 theme = "forty"
