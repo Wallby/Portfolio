@@ -150,7 +150,7 @@ theme = "forty"
     enable = true
     buttonSend = "Send message"
     buttonClear = "Clear"
-    formEmail = "maartentenvelden@hotmail.com"
+    formEmail = "f/xoqyzlbg"
 
   # Footer section
   [params.footer]
@@ -159,7 +159,7 @@ theme = "forty"
 
     [[params.footer.social]]
       icon = "fa-envelope"
-      url= "mailto:info@maartentenvelden.nl"
+      url= "mailto:info@wallby.nl"
       label = "Email"
       
     [[params.footer.social]]
