@@ -34,7 +34,13 @@ theme = "forty"
     url = "https://www.visualstudio.com/"
     image = "/img/visual_studio.png"
     using = true
-    
+
+  [[params.technologies]]
+    name = "Eclipse IDE"
+    url = "https://www.eclipse.org/eclipseide/"
+    image = "/img/eclipse.png"
+    using = true
+  
   [[params.technologies]]
     name = "HacknPlan"
     url = "https://www.hacknplan.com/"
@@ -92,7 +98,7 @@ theme = "forty"
     # To change the background image on the homepage banner, replace 'banner.jpg' in
     # the 'static/img' folder.
     title = "Hi, my name is Maarten"
-    subtitle = "freelancer, game developer"
+    subtitle = "game developer"
     buttonText = "Read more"
 
   # Tiles Section
