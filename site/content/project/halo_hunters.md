@@ -29,7 +29,7 @@ As we were such a small team with very limited time I did the programming, desig
 ## Main menu
 <div class="row">
 <p class="6u 12u$(small)" style="text-align: center;">
-<img style="max-width: 600px;" src="/img/project/halo_hunters/main_menu.png" width=100%>
+<img style="max-width: 600px;" src="/img/project/halo_hunters/main_menu.jpg" width=100%>
 </p>
 <p class="6u 12u$(small)">
 As I created a significant chunk of the game's multiplayer experience (namely split-screen, input and player selection), I took it upon myself to add polish in the form of a main menu to deliver a flowing experience to the end user. I reused some old assets to build an inviting scene, made sure the player feedback was nice and responsive, and (catering to the impatient) added rotatable player models.
