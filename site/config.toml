@@ -69,10 +69,6 @@ theme = "forty"
       name = "Home"
       url = "#"
 
-    #[[params.navigation.links]]
-    #  name = "Blog"
-    #  url = "blogs"
-
     [[params.navigation.links]]
       name = "Contact"
       url = "page/contact"
@@ -82,9 +78,8 @@ theme = "forty"
       url = "page/about"
 
     #[[params.navigation.button2]]
-    #  name = "Download my CV"
-    #  url = "cv.pdf"
-
+    #  name = ""
+    #  url = ""
 
   # Banner section
   [params.banner]
