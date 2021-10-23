@@ -21,3 +21,5 @@ download: "http://projectsulphur.com/download"
 date: 2017-10-31T21:28:43-05:00
 draft: false
 ---
+
+<p style="background-color: #f7a100; border: 1px solid black; border-radius: 4px; padding-left: 5px; padding-right: 5px;"><b style="color: black;">NOTE: the website seems to have gone offline. <a href=https://github.com/ProjectSulphur/ProjectSulphur>The github page</a> still exists.</b></p>
