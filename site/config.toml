@@ -21,43 +21,36 @@ theme = "forty"
     name = "Unity"
     url = "https://unity3d.com/"
     image = "/img/unity.png"
-    using = true
     
   [[params.technologies]]
     name = "Unreal Engine"
     url = "https://www.unrealengine.com/en-US/blog"
     image = "/img/unreal_engine.png"
-    using = true
-    
+
   [[params.technologies]]
     name = "Visual Studio"
     url = "https://www.visualstudio.com/"
     image = "/img/visual_studio.png"
-    using = true
 
   [[params.technologies]]
     name = "Eclipse IDE"
     url = "https://www.eclipse.org/eclipseide/"
     image = "/img/eclipse.png"
-    using = true
   
   [[params.technologies]]
     name = "HacknPlan"
     url = "https://www.hacknplan.com/"
     image = "/img/hacknplan.png"
-    using = true
-    
+
   [[params.technologies]]
     name = "Jira"
     url = "https://www.jira.com/"
     image = "/img/jira.png"
-    using = true
     
   [[params.technologies]]
     name = "Git"
     url = "https://www.git-scm.com/"
     image = "/img/git.png"
-    using = true
   
   # 404 error customization
   [params.error404]
