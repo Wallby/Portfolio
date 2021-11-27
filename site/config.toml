@@ -124,6 +124,12 @@ theme = "forty"
       image = "barock_battles.jpg"
       url = "project/barock_battles"
 
+    [[params.tiles.showcase]]
+      title = "Jellyventure"
+      subtitle = "A game with the theme jelly written in C++ using SDL2"
+      image = "jellyventure.jpg"
+      url = "project/jellyventure"
+
     # You can make more showcases by copy and pasting the code above
 
   [params.blog]
