@@ -7,7 +7,7 @@ tools: [
 description: "Mayor is a city management game made in the third year of my game development bachelor at  [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html). The game was made from concept to final product in a period of two and a half weeks as part of a so-called game marmalade (i.e. an extended game jam). Another marmalade game is [Halo Hunters](../halo_hunters)."
 slug: "mayor"
 trailer: WXgxsMuIlmc
-keywords: "game marmalade Unity"
+keywords: "game marmalade"
 contributions: [
   "Project management as Scrum Master",
   "Traffic system in Blueprints",
