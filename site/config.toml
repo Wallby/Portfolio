@@ -3,6 +3,7 @@ baseURL = "https://wallby.nl"
 languageCode = "en-us"
 title = "Maarten ten Velden"
 theme = "forty"
+disableKinds = ["taxonomy", "section"]
 
 # https://www.cloudhadoop.com/hugo-raw-html-committed/
 [markup]
