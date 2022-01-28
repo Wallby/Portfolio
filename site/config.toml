@@ -30,7 +30,7 @@ theme = "forty"
   [[params.technologies]]
     name = "Visual Studio"
     url = "https://www.visualstudio.com/"
-    image = "/img/visual_studio.png"
+    image = "/img/visual_studio.svg"
 
   [[params.technologies]]
     name = "Eclipse IDE"
