@@ -3,4 +3,4 @@ A repository for my portfolio
 
 ## 3rdParty
 
-* Hugo (v0.59.1)
+* Hugo (v0.75.1)

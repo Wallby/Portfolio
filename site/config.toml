@@ -4,6 +4,12 @@ languageCode = "en-us"
 title = "Maarten ten Velden"
 theme = "forty"
 
+# https://www.cloudhadoop.com/hugo-raw-html-committed/
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
   # Provide your metadata here.
   name = "Maarten ten Velden"
@@ -38,6 +44,11 @@ theme = "forty"
     image = "/img/eclipse.png"
   
   [[params.technologies]]
+    name = "Make"
+    url = "https://www.gnu.org/software/make/"
+    image = "/img/make.png"
+  
+  [[params.technologies]]
     name = "HacknPlan"
     url = "https://www.hacknplan.com/"
     image = "/img/hacknplan.png"
@@ -51,7 +62,7 @@ theme = "forty"
     name = "Git"
     url = "https://www.git-scm.com/"
     image = "/img/git.png"
-  
+
   # 404 error customization
   [params.error404]
     heading = "Page couldn't be found"
@@ -93,6 +104,12 @@ theme = "forty"
   [params.tiles]
     enable = true
     # Display your showcases here.
+
+    [[params.tiles.showcase]]
+      title = "arguments-mini"
+      subtitle = "A library for parsing commandline arguments written in C"
+      image = "arguments-mini.jpg"
+      url = "project/arguments_mini"
 
     [[params.tiles.showcase]]
       title = "Project Sulphur"
