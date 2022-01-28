@@ -13,7 +13,7 @@ including shadow mapping."
 slug: "agr"
 #trailer: GQLV4ADYe18 #< This is the official trailer, which doesn't include many of the FX
 trailer: qtfIpzz7y7w
-keywords: "engine cross-platform PS4 Windows"
+keywords: ["engine", "ps4", "windows"]
 contributions: [
   "Shadow mapping in DX11 and GNMX",
   "Particle systems in DX11 and GNMX",

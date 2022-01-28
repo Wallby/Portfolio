@@ -7,7 +7,7 @@ description: "To get accepted into [IGAD](https://www.nhtv.nl/ENG/bachelors/crea
 download: https://wallby.itch.io/jellyventure
 slug: "jellyventure"
 poster: "poster.jpg"
-keywords: "jelly"
+keywords: ["jelly"]
 contributions: [
   "All programming",
   "Made sprites in photoshop and paint.net",
