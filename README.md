@@ -1,5 +1,5 @@
 # Portfolio
-A repository for my (WIP) portfolio
+A repository for my portfolio
 
 ## 3rdParty
 
