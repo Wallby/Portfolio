@@ -16,7 +16,10 @@ draft: false
 
 Before release [0.2.1 (patch for beta)](https://github.com/Wallby/arguments-mini/releases/tag/0.2.1-beta) arguments-mini-test ran two tests (one to test if a valid argv did succeed, and another to test if an invalid argv did not succeed).
 
-![](/img/project/arguments_mini/arguments_mini_test.png)
+<div class="row">
+<p class="12u" style="text-align: center;">
+<img src="/img/project/arguments_mini/arguments_mini_test.png" width=100%>
+</div>
 
 With release 0.2.1 these tests were removed and I added three tests..
 * one for argument parsing
