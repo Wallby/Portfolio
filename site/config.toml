@@ -168,7 +168,7 @@ disableKinds = ["taxonomy", "section"]
   # Footer section
   [params.footer]
     enable = true
-    copyright = "Maarten ten velden"
+    copyright = "Maarten ten Velden"
 
     [[params.footer.social]]
       icon = "fa-envelope"
