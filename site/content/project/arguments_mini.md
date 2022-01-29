@@ -3,7 +3,7 @@ title: "arguments-mini"
 tools: [
   "Make"
 ]
-description: "A single .c file library written in C for parsing commandline arguments."
+description: "A single .cpp file library written in \"C linkable C++\" (C++ with inline new and delete) for parsing commandline arguments."
 slug: "arguments_mini"
 poster: "poster.gif"
 keywords: ["commandline arguments", "linux", "windows"]
