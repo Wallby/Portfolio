@@ -11,8 +11,9 @@ with the development of the tech. As a graphics programmer I setup the
 foundations for cross-platform rendering and implement several effects,
 including shadow mapping."
 slug: "agr"
-#trailer: GQLV4ADYe18 #< This is the official trailer, which doesn't include many of the FX
-trailer: qtfIpzz7y7w
+#trailer: ["youtube","GQLV4ADYe18"] #< This is the official trailer, which doesn't include many of the FX
+#trailer: ["youtube","qtfIpzz7y7w"] #< This was taken down
+trailer: ["agr_gameplay.mp4"]
 keywords: ["engine", "ps4", "windows"]
 contributions: [
   "Shadow mapping in DX11 and GNMX",
