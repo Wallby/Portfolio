@@ -110,7 +110,7 @@ disableKinds = ["taxonomy", "section"]
     [[params.tiles.showcase]]
       title = "arguments-mini"
       subtitle = "A library for parsing commandline arguments written in C++"
-      image = "arguments-mini.jpg"
+      image = "arguments_mini.jpg"
       url = "project/arguments_mini"
 
     [[params.tiles.showcase]]
