@@ -9,19 +9,19 @@
 
     {{ partial "nav.html" . }} {{ "<!-- Main -->" | safeHTML }}
     <div id="main" class="alt">
-      <div class="background" style="background-image: url({{ .Site.BaseURL }}/img/{{ $.RelPermalink }}/background.jpg);"></div>
+      <div class="background" style="background-image: url({{ .Site.BaseURL }}/img{{ $.RelPermalink }}background.jpg);"></div>
 
       <!-- One -->
       <section id="one">
         <div class="inner">
           <div class="intro">
             <!-- Title -->
-            {{ $image_path := (printf "img/%s" $.RelPermalink) }}
-            {{ $video_path := (printf "vid/%s" $.RelPermalink) }}
-            {{ if (fileExists (printf "static/%s/logo.png" $image_path)) }}
+            {{ $image_path := (printf "img%s" $.RelPermalink) }}
+            {{ $video_path := (printf "vid%s" $.RelPermalink) }}
+            {{ if (fileExists (printf "static/%slogo.png" $image_path)) }}
             <div class="row">
               <div class="12u" id="logo">
-                <img src="{{ .Site.BaseURL }}/{{ $image_path }}/logo.png" alt="{{ .Title }}" style="max-width: 100%; margin-left: auto; margin-right: auto; display: block;">
+                <img src="{{ .Site.BaseURL }}/{{ $image_path }}logo.png" alt="{{ .Title }}" style="max-width: 100%; margin-left: auto; margin-right: auto; display: block;">
               </div>
             </div>
             {{ else }}
@@ -41,12 +41,12 @@
                       {{ end }}
                     {{ else }}
                   <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
-  <source src="{{ .Site.BaseURL }}/{{ $video_path }}/{{ index .Params.trailer 0 }}" type="video/{{ trim (path.Ext (index .Params.trailer 0)) "." }}">
+  <source src="{{ .Site.BaseURL }}/{{ $video_path }}{{ index .Params.trailer 0 }}" type="video/{{ trim (path.Ext (index .Params.trailer 0)) "." }}">
 Your browser does not support the video tag.
 </video>
                     {{ end }}
                   {{ else }}
-                  <img src="{{ .Site.BaseURL }}/{{ $image_path }}/{{ .Params.poster }}" style="position: absolute; top: 0; left: 0; width: 100%;">
+                  <img src="{{ .Site.BaseURL }}/{{ $image_path }}{{ .Params.poster }}" style="position: absolute; top: 0; left: 0; width: 100%;">
                   {{ end }}
                 </div>
               </div>
