@@ -15,7 +15,7 @@ disableKinds = ["taxonomy", "section"]
 [params]
   # Provide your metadata here.
   name = "Maarten ten Velden"
-  description = "Creative Engineer"
+  description = "Game developer"
 
   # Link custom assets relative to /static
   custom_css = ["css/main_overrides.css"]
