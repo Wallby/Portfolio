@@ -3,7 +3,7 @@ title: "Jellyventure"
 tools: [
   "Visual Studio"
 ]
-description: "To get accepted into [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html) there was an assignment to make game with the theme jelly. Jellyventure became the game that got me accepted into [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html)."
+description: "To get accepted into [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html) there was an assignment to make a game with the theme jelly. Jellyventure became the game that got me accepted into [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html)."
 download: https://wallby.itch.io/jellyventure
 slug: "jellyventure"
 poster: "poster.jpg"
