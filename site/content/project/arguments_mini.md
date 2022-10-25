@@ -18,7 +18,11 @@ Before release [0.2.1 (patch for beta)](https://github.com/Wallby/arguments-mini
 
 <div class="row">
 <p class="12u" style="text-align: center;">
+<figure>
 <img src="/img/project/arguments_mini/arguments_mini_test.png" width=100%>
+<figcaption style="font-style: italic;text-align: center">Output of argument-mini-test 0.2.1</figcaption>
+</figure>
+</p>
 </div>
 
 With release 0.2.1 these tests were removed and I added three tests..
