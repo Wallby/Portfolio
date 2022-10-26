@@ -66,7 +66,9 @@ Your browser does not support the video tag.
                 {{ range $i := .Params.tools }}
                 {{ range $j := $.Site.Params.technologies }}
                 {{ if eq $i $j.name}}
-                <a class="image" href="{{ $j.url }}"><img src=" {{ $.Site.BaseURL }}/{{ $j.image }}" alt="" style="height: 64px; margin-right: 10px"></a>
+                <div style="display:inline;margin-right: 10px;">
+                  {{ partial "technology.html" $j }}
+                </div>
                 {{ end }}
                 {{ end }}
                 {{ end }}

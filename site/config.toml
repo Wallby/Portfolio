@@ -29,11 +29,13 @@ disableKinds = ["taxonomy", "section"]
     name = "Unity"
     url = "https://unity3d.com/"
     image = "/img/unity.png"
+    smooth_image = true
     
   [[params.technologies]]
     name = "Unreal Engine"
     url = "https://www.unrealengine.com/en-US/blog"
     image = "/img/unreal_engine.png"
+    smooth_image = true
 
   [[params.technologies]]
     name = "Visual Studio"
@@ -44,26 +46,54 @@ disableKinds = ["taxonomy", "section"]
     name = "Eclipse IDE"
     url = "https://www.eclipse.org/eclipseide/"
     image = "/img/eclipse.png"
+    smooth_image = true
   
   [[params.technologies]]
     name = "Make"
     url = "https://www.gnu.org/software/make/"
     image = "/img/make.png"
+    smooth_image = true
+  
+  [[params.technologies]]
+    name = "Batch"
+    image = "/img/batch.png"
+    smooth_image = true
   
   [[params.technologies]]
     name = "HacknPlan"
     url = "https://www.hacknplan.com/"
     image = "/img/hacknplan.png"
+    smooth_image = true
 
   [[params.technologies]]
     name = "Jira"
     url = "https://www.jira.com/"
     image = "/img/jira.png"
+    smooth_image = true
     
   [[params.technologies]]
     name = "Git"
     url = "https://www.git-scm.com/"
     image = "/img/git.png"
+    smooth_image = true
+  
+  [[params.technologies]]
+    name = "Win32"
+    url = "https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list"
+    image = "/img/microsoft.ico"
+    smooth_image = false
+
+  [[params.technologies]]
+    name = "Xlib"
+    url = "https://x.org/releases/current/doc/libX11/libX11/libX11.html"
+    image = "/img/xlib.ico"
+    smooth_image = false
+
+  [[params.technologies]]
+    name = "Vulkan"
+    url = "https://www.vulkan.org/"
+    image = "/img/vulkan.png"
+    smooth_image = true
 
   # 404 error customization
   [params.error404]

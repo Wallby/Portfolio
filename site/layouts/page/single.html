@@ -28,7 +28,9 @@
           <ul style="list-style: none">
             {{ range $j := $.Site.Params.technologies }}
             <li style="padding-bottom: 10px">
-              <a style="vertical-align: middle" class="image" href="{{ $j.url }}"><img src=" {{ $.Site.BaseURL }}/{{ $j.image }}" alt="" style="height: 64px; margin-right: 10px"></a>
+              <div style="display: inline;margin-right: 10px;">
+                {{ partial "technology.html" $j }}
+              </div>
               <span>{{ $j.name }}</span>
             </li>
             {{ end }}
