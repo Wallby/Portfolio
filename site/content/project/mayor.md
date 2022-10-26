@@ -23,45 +23,37 @@ Because of my irregular schedule as a result of growing into the role of Scrum M
 
 The task I spent most of my non-scrum-master time on was the traffic system, intended to bring some life into the scene.
 
-<!-- TODO: Replace hr solution with actual swapping of column order for mobile -->
-
-<hr>
-
 <div class="row">
-<p class="6u 12u$(small)" style="text-align: center;">
-<img style="max-width: 300px;" src="/img/project/mayor/traffic_nodes_in_editor.png" width=100%>
-<br>
-<i>The traffic node gizmos as seen in the editor</i>
-<br>
-<img style="max-width: 300px;" src="/img/project/mayor/traffic_node_inspector.png" width=100%>
-<br>
-<i>The inspector view on a traffic node actor</i>
-</p>
-<p class="6u 12u$(small)">
-The city layout was not entirely grid-like (though every corner is a right angle). Because of this I settled on a pathing graph system. Each node in the graph knows to which neighboring nodes it is connected (a node is represented as a white sphere in the scene).
-</p>
+  <div class="6u 12u$(small)">
+    <figure>
+      <img src="/img/project/mayor/traffic_nodes_in_editor.png" style="width: 100%;max-width: 300px;">
+      <figcaption>The traffic node gizmos as seen in the editor</figcaption>
+    </figure>
+  </div>
+  <br>
+  <div class="6u 12u$(small)">
+    <figure>
+      <img src="/img/project/mayor/traffic_node_inspector.png" style="width: 100%;max-width: 300px;">
+      <figcaption>The inspector view on a traffic node actor</figcaption>
+    </figure>
+    <br>
+    <p >The city layout was not entirely grid-like (though every corner is a right angle). Because of this I settled on a pathing graph system. Each node in the graph knows to which neighboring nodes it is connected (a node is represented as a white sphere in the scene).</p>
+  </div>
 </div>
 
-<hr>
-
 <div class="row">
-<p class="6u 12u$(small)">
-A central traffic manager is responsible for the spawning, updating, and despawning of the cars.
-</p>
-<p class="6u 12u$(small)" style="text-align: center;">
-<img style="max-width: 300px;" src="/img/project/mayor/traffic_manager.png" width=100%>
-<br>
-<i>The inspector view on the traffic manager actor</i>
-</p>
+  <p class="6u 12u$(small)">A central traffic manager is responsible for the spawning, updating, and despawning of the cars.</p>
+  <div class="6u 12u$(small)">
+    <figure>
+      <img src="/img/project/mayor/traffic_manager.png" style="width: 100%;max-width: 300px;">
+      <figcaption>The inspector view on the traffic manager actor</figcaption>
+    </figure>
+  </div>
 </div>
 
-<hr>
-
 <div class="row">
-<p class="6u 12u$(small)" style="text-align: center;">
-<img style="max-width: 400px;" src="/img/project/mayor/traffic.gif" width=100%>
-</p>
-<p class="6u 12u$(small)">
-The car actors themselves are actually all on the center of the street, but the model itself is offset to one side (kudos to the artist who inspired this simple and neat solution).
-</p>
+  <div class="6u 12u$(small)">
+    <img src="/img/project/mayor/traffic.gif" style="width: 100%;max-width: 400px;">
+  </div>
+  <p class="6u 12u$(small)">The car actors themselves are actually all on the center of the street, but the model itself is offset to one side (kudos to the artist who inspired this simple and neat solution).</p>
 </div>

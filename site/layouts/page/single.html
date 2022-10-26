@@ -19,23 +19,25 @@
           <header class="major">
             <h1>{{ .Title}}</h1>
           </header>
-          <span class="image main"><img src="{{ .Site.Params.baseURL }}/img/{{ .Params.image }}" alt="" /></span>
-          {{ .Content }}
-
-          {{ "<!-- Technologies -->" | safeHTML}}
-          {{ if .Params.listTechnologies }}
-          <p>Technologies that I have used...</p>
-          <ul style="list-style: none">
-            {{ range $j := $.Site.Params.technologies }}
-            <li style="padding-bottom: 10px">
-              <div style="display: inline;margin-right: 10px;">
-                {{ partial "technology.html" $j }}
-              </div>
-              <span>{{ $j.name }}</span>
-            </li>
+          <div id="content">
+            {{ .Content }}
+          </div>
+          <div id="technologies">
+            {{ "<!-- Technologies -->" | safeHTML}}
+            {{ if .Params.listTechnologies }}
+            <p>Technologies that I have used...</p>
+            <ul style="list-style: none">
+              {{ range $j := $.Site.Params.technologies }}
+              <li>
+                <div style="display: inline;margin-right: 10px;">
+                  {{ partial "technology.html" $j }}
+                </div>
+                <span style="">{{ $j.name }}</span>
+              </li>
+              {{ end }}
+            </ul>
             {{ end }}
-          </ul>
-          {{ end }}
+          </div>
         </div>
       </section>
     </div>
@@ -53,8 +55,25 @@
 
   <!-- Styling for content -->
   <style>
-    p>img {
+    /* override main.css */
+    #main > * > .inner {
+      padding-bottom: 0;
+    }
+
+    #content img {
+      display: block;
       border: 2px solid white;
+    }
+    #content img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #technologies li {
+      padding-bottom: 1em;
+    }
+    #technologies li:last-child {
+      padding-bottom: 0;
     }
   </style>
 

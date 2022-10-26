@@ -6,14 +6,16 @@
 	}
 	.tiles article:last-child img {
 		margin-right: auto;
+		height: 50%;
+		max-height: 128px;
 	}
 	.tiles article:last-child:before {
 		background-color: transparent;
+
 	}
-	
-	@media screen and (max-width: 736px) {
+	@media screen and (min-width: 481px) and (max-width: 736px) {
 		.tiles article:last-child img {
-			width: 80px;
+			left: -2em;
 		}
 	}
 

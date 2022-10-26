@@ -32,83 +32,82 @@
             <!-- Summary -->
             <div class="row">
               <div class="8u 12u$(small)">
-                <div style="position: relative; margin-bottom: 5%; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
-                  {{ if isset .Params "trailer"}}
-                    {{ if eq (len .Params.trailer) 2 }}
-                      {{ if eq (index .Params.trailer 0) "youtube" }}
-                  <iframe title="YouTube Video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube-nocookie.com/embed/{{ index .Params.trailer 1 }}?rel=0&amp;showinfo=0" frameborder="0" gesture="media"
-                    allow="encrypted-media" allowfullscreen frameborder="0"></iframe>
-                      {{ end }}
-                    {{ else }}
-                  <video style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" controls>
+                {{ if isset .Params "trailer"}}
+                {{ if eq (len .Params.trailer) 2 }}
+                {{ if eq (index .Params.trailer 0) "youtube" }}
+                <!--                  56.25% == 16:9 aspect ratio
+                                                                v -->
+                <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                  <iframe title="YouTube Video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube-nocookie.com/embed/{{ index .Params.trailer 1 }}?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen frameborder="0"></iframe>
+                </div>
+                {{ end }}
+                {{ else }}
+                <video style="width: 100%;height: 100%;" controls>
   <source src="{{ .Site.BaseURL }}/{{ $video_path }}{{ index .Params.trailer 0 }}" type="video/{{ trim (path.Ext (index .Params.trailer 0)) "." }}">
 Your browser does not support the video tag.
 </video>
-                    {{ end }}
-                  {{ else }}
-                  <img src="{{ .Site.BaseURL }}/{{ $image_path }}{{ .Params.poster }}" style="position: absolute; top: 0; left: 0; width: 100%;">
-                  {{ end }}
-                </div>
+                {{ end }}
+                {{ else }}
+                <img src="{{ .Site.BaseURL }}/{{ $image_path }}{{ .Params.poster }}" style="width: 100%;">
+                {{ end }}
               </div>
-              <div class="4u 12u$(small)">
+              <div class="4u 12u$(small)" id="contributions">
                 {{ if isset .Params "contributions" }}
-                <h4>What I did</h4>
-                <ul class="alt">
-                  {{ range .Params.contributions }}
-                  <li>{{ .  | markdownify }}</li>
-                  {{ end }}
-                </ul>
-                {{ end }}
-              </div>
-              {{ if isset .Params "tools" }}
-              <div class="4u 12u$(small)">
-                <h4>What I used</h4>
-                {{ range $i := .Params.tools }}
-                {{ range $j := $.Site.Params.technologies }}
-                {{ if eq $i $j.name}}
-                <div style="display:inline;margin-right: 10px;">
-                  {{ partial "technology.html" $j }}
+                <div>
+                  <h4>What I did</h4>
+                  <ul class="alt">
+                    {{ range .Params.contributions }}
+                    <li>{{ .  | markdownify }}</li>
+                    {{ end }}
+                  </ul>
                 </div>
                 {{ end }}
+                {{ if isset .Params "tools" }}
+                <div>
+                  <h4>What I used</h4>
+                  {{ range $i := .Params.tools }}
+                  {{ range $j := $.Site.Params.technologies }}
+                  {{ if eq $i $j.name}}
+                  <div style="display:inline;margin-right: 10px;">
+                    {{ partial "technology.html" $j }}
+                  </div>
+                  {{ end }}
+                  {{ end }}
+                  {{ end }}
+                </div>
                 {{ end }}
-                {{ end }}
+              </div>
+              <!-- Break -->
+              <div class="{{ if isset .Params "download" }}8u 12u$(small){{ else }}12u{{ end }}">
+                <ul class="actions vertical">
+                  <h4>About the project</h4>
+                  <ul class="alt">
+                    <p>{{ .Params.description | markdownify }}</p>
+                  </ul>
+                </ul>
+              </div>
+              {{ if isset .Params "download" }} 
+              <div class="4u$ 12u$(small)">
+                <ul class="actions vertical">
+                  <li><a href="{{ .Params.download }}" class="button big icon fa-download">Download</a></li>
+                </ul>
               </div>
               {{ end }}
-              <!-- Break -->
-              {{ if isset .Params "download" }}
-              <div class="8u 12u$(small)">
-                {{ else }}
-                <div class="12u">
-                  {{ end }}
-                  <ul class="actions vertical">
-                    <h4>About the project</h4>
-                    <ul class="alt">
-                      <p>{{ .Params.description | markdownify }}</p>
-                    </ul>
-                  </ul>
-                </div>
-                <div class="4u$ 12u$(small)">
-                  <ul class="actions vertical">
-                    {{ if isset .Params "download" }}
-                    <li><a href="{{ .Params.download }}" class="button big icon fa-download">Download</a></li>
-                    {{ end }}
-                  </ul>
-                </div>
-              </div>
-            </div>
-            {{ if gt .Content 0 }}
-            <a href="#two" id="scroll-notification" class="button scrolly">
-              <span class="icon fa-arrow-down"></span>
-              Read more
-              <span class="icon fa-arrow-down"></span>
-            </a>
-            {{ end }}
-            <div id="two" class="row">
-              <div class="12u$">
-                {{ .Content }}
-              </div>
             </div>
           </div>
+          {{ if gt .Content 0 }}
+          <a href="#two" id="scroll-notification" class="button scrolly">
+            <span class="icon fa-arrow-down"></span>
+              Read more
+            <span class="icon fa-arrow-down"></span>
+          </a>
+          {{ end }}
+          <div id="two" class="row">
+            <div class="12u$">
+              {{ .Content }}
+            </div>
+          </div>
+        </div>
       </section>
     </div>
 
@@ -118,8 +117,67 @@ Your browser does not support the video tag.
 
   <!-- Styling for content -->
   <style>
-    p>img, figure>img {
+    /* override main.css */
+    #main > * > .inner {
+      padding-bottom: 0;
+    }
+
+    /* don't add margin-bottom to .row but instead to every element */
+    .intro .row>* {
+      margin-bottom: 2em;
+    }
+    .intro .row>* * {
+      margin-bottom: 0;
+    }
+
+    /* override main.css*/
+    .intro ul {
+      margin-bottom: 0;
+    }
+    .intro p {
+      margin-bottom: 0;
+    }
+
+    /* #contributions already has margin-bottom so last element inside #contributions shouldn't */
+    .intro #contributions>* {
+      margin-bottom: 2em;
+    }
+    .intro #contributions>:last-child {
+      margin-bottom: 0;
+    }
+
+    /* don't add margin-bottom to .row but instead to every element */
+    #two .row {
+      margin-bottom: 0;
+    }
+    #two .row>* {
+      margin-bottom: 2em;
+    }
+
+    /* img */
+    /* to remove border from img and add manually use id="image-border" and id="no-image-border" */
+    #two img {
+      display: block;
+    }
+    /* horizontally center every image in #two */
+    #two #image-border, #two figure>img, #two .row>div>img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #two img, #two #image-border {
       border: 2px solid white;
+    }
+    #two #no-image-border {
+      border-width: 0;
+    }
+    #two #image-border {
+      width: fit-content;
+    }
+
+    /* figure */
+    #two figure figcaption {
+      font-style: italic;
+      text-align: center;
     }
   </style>
 

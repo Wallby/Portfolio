@@ -13,10 +13,12 @@
   {{ end }}
   <article>
     <!-- NOTE: keep this as the last element so that it doesn't look weird -->
-    <header class="major">
+    <header class="major" style="min-width: max-content;">
       <h3>A "new" project</h3>
       <p>contact me?</p>
     </header>
-    <img style="margin-left: 1em; padding-top: 7em; float: right" src="{{ .Site.Params.baseURL }}img/arrow.png" alt="" />
+    <div style="position: relative;height: 100%;right: 0;">
+      <img style="position: absolute;bottom: 0;" src="{{ .Site.Params.baseURL }}img/arrow.png" alt="" />
+    </div>
   </article>
 </section>

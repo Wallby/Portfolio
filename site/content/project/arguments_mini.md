@@ -17,12 +17,15 @@ draft: false
 Before release [0.2.1 (patch for beta)](https://github.com/Wallby/arguments-mini/releases/tag/0.2.1-beta) arguments-mini-test ran two tests (one to test if a valid argv did succeed, and another to test if an invalid argv did not succeed).
 
 <div class="row">
-<p class="12u" style="text-align: center;">
-<figure>
-<img src="/img/project/arguments_mini/arguments_mini_test.png" width=100%>
-<figcaption style="font-style: italic;text-align: center">Output of argument-mini-test 0.2.1</figcaption>
-</figure>
-</p>
+  <div class="12u">
+    <figure>
+      <!-- image-border and no-image-border here as 919px is width of image (i.e. "border-width") -->
+      <div id="image-border">
+        <img src="/img/project/arguments_mini/arguments_mini_test.png" id="no-image-border" style="width: 100%;max-width: 919px;">
+      </div>
+      <figcaption style="text-align: center;">Output of argument-mini-test 0.2.1</figcaption>
+    </figure>
+  </div>
 </div>
 
 With release 0.2.1 these tests were removed and I added three tests..

@@ -30,33 +30,27 @@ draft: false
 <p class="6u 12u$(small)">
 Something I was determined to learn from the moment this project started was how to implement shadow mapping. I did the implementation for both the DirectX11 and GNMX renderers. The features I worked on are the base shadow mapping, PCF, and normal offset.
 </p>
-<p class="6u 12u$(small)" style="text-align: center;">
-<img style="max-width: 500px;" src="/img/project/agr/shadows.gif" width=100%>
-</p>
+<div class="6u 12u$(small)">
+<img style="width: 100%;max-width: 500px;" src="/img/project/agr/shadows.gif">
+</div>
 </div>
 
 ## Particle editor
 <div class="row">
-<p class="6u 12u$(small)" style="text-align: center;">
-<img style="max-width: 600px;" src="/img/project/agr/spline_editor.gif" width=100%>
-</p>
-<p class="6u 12u$(small)">
-Since the engine and game were developed simultaneously, I created incremental versions of the particle editor. Meanwhile, I changed the particles from physics- to curve-based</a>, and optimized the rendering reducing bandwidth (using the geometry shader) and draw calls (batching).
-</p>
+  <div class="6u 12u$(small)">
+    <img src="/img/project/agr/spline_editor.gif" style="width: 100%;max-width: 600px;">
+  </div>
+  <p class="6u 12u$(small)">Since the engine and game were developed simultaneously, I created incremental versions of the particle editor. Meanwhile, I changed the particles from physics- to curve-based</a>, and optimized the rendering reducing bandwidth (using the geometry shader) and draw calls (batching).</p>
+</div>
+  <div class="row">
+    <p class="6u 12u$(small)">Here you can see the car exhaust particle system in the editor...</p>
+  <div class="6u 12u$(small)">
+    <img src="/img/project/agr/exhaust.gif" style="width: 100%;max-width: 600px;">
+  </div>
 </div>
 <div class="row">
-<p class="6u 12u$(small)">
-Here you can see the car exhaust particle system in the editor...
-</p>
-<p class="6u 12u$(small)" style="text-align: center;">
-<img style="max-width: 600px;" src="/img/project/agr/exhaust.gif" width=100%>
-</p>
-</div>
-<div class="row">
-<p class="6u 12u$(small)" style="text-align: center;">
-<img style="max-width: 600px;" src="/img/project/agr/exhaust_smooth.png" width=100%>
-</p>
-<p class="6u 12u$(small)">
-... and here you can see it in the engine. To accommodate for the car's movement I added parenting and 'weights'.
-</p>
+  <div class="6u 12u$(small)">
+    <img src="/img/project/agr/exhaust_smooth.png" style="width: 100%;max-width: 600px;">
+  </div>
+  <p class="6u 12u$(small)">... and here you can see it in the engine. To accommodate for the car's movement I added parenting and 'weights'.</p>
 </div>
