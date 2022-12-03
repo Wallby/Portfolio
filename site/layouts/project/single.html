@@ -86,10 +86,12 @@ Your browser does not support the video tag.
                   </ul>
                 </ul>
               </div>
-              {{ if isset .Params "download" }} 
+              {{ if isset .Params "download" }}
               <div class="4u$ 12u$(small)">
                 <ul class="actions vertical">
-                  <li><a href="{{ .Params.download }}" class="button big icon fa-download">Download</a></li>
+                  <li>
+                    <a href="{{ .Params.download }}" class="button big icon fa-download" {{ if (not (strings.Contains .Params.download "/")) }}download{{ end }}>Download</a>
+                  </li>
                 </ul>
               </div>
               {{ end }}

@@ -52,3 +52,6 @@ Temporary Items
 site/public/
 site/themes/*/exampleSite/
 site/static/vid/
+
+# Downloads
+*.zip
