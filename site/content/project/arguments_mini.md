@@ -6,7 +6,7 @@ tools: [
 description: "A single .cpp file library written in \"C linkable C++\" (C++ with inline new and delete) for parsing commandline arguments."
 slug: "arguments_mini"
 poster: "poster.gif"
-keywords: ["commandline arguments", "linux", "windows"]
+keywords: ["tool", "library", "linux", "windows", "downloadable"]
 download: "https://github.com/Wallby/arguments-mini"
 date: 2022-01-28T16:18:28+01:00
 draft: false

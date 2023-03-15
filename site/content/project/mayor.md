@@ -2,20 +2,45 @@
 title: "Mayor"
 tools: [
   "Unreal Engine",
-  "HacknPlan"
+  "HacknPlan",
+  "Excel"
 ]
-description: "Mayor is a city management game made in the third year of my game development bachelor at  [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html). The game was made from concept to final product in a period of two and a half weeks as part of a so-called game marmalade (i.e. an extended game jam). Another marmalade game is [Halo Hunters](../halo_hunters)."
+description: "Mayor is a city management game made in the second year of my game development bachelor at  [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html). The game was made from concept to final product in a period of two and a half weeks as part of a so-called game marmalade (i.e. an extended game jam). Another marmalade game is [Halo Hunters](../halo_hunters)."
 slug: "mayor"
 trailer: ["youtube","WXgxsMuIlmc"]
-keywords: ["game marmalade"]
+keywords: ["game", "game marmalade"]
 contributions: [
   "Project management as Scrum Master",
   "Traffic system in Blueprints",
-  "Automation tools made in Excel",
+  "Created spreadsheet for calculating working hours",
   ]
 date: 2017-10-31T21:28:43-05:00
 draft: false
 ---
+
+## Scrum master
+
+During a workshop I saw someone gathering the available hours of each team member as working/available/unavailable/ICE (available in case of emergency). I created a spreadsheet and requested each team member to fill it in. I added some color for readability and added a summary on the right.
+
+<div class="row">
+  <div class="12u">
+    <figure>
+      <img src="/img/project/mayor/hoursspreadsheet_individual.jpg" style="width: 100%;max-width: 30em;">
+    </figure>
+  </div>
+</div>
+
+On another worksheet I added a summary calculating the total number of hours available.
+
+<div class="row">
+  <div class="12u">
+    <figure>
+      <img src="/img/project/mayor/hoursspreadsheet_total.jpg" style="width: 100%;max-width: 30em;">
+    </figure>
+  </div>
+</div>
+
+In the sprint planning and HacknPlan the metric used was hours, hence this was consistent everywhere
 
 ## Traffic system
 

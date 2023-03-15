@@ -4,10 +4,10 @@ tools: [
   "Unreal Engine",
   "HacknPlan"
 ]
-description: "Halo Hunters is an arena shooter played locally with up to four players made in the third year of my game development bachelor at  [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html). The game was made from concept to final product in a period of two weeks as part of a so-called game marmalade (i.e. an extended game jam). Another marmalade game is [Mayor](../mayor)."
+description: "Halo Hunters is an arena shooter played locally with up to four players made in the second year of my game development bachelor at  [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html). The game was made from concept to final product in a period of two weeks as part of a so-called game marmalade (i.e. an extended game jam). Another marmalade game is [Mayor](../mayor)."
 slug: "halo_hunters"
 trailer: ["youtube","L2am8XveP2I"]
-keywords: ["game marmalade"]
+keywords: ["game", "game marmalade"]
 contributions: [
   "Homing missile in Blueprints",
   "Local multiplayer in Blueprints and C++"

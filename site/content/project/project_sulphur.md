@@ -5,10 +5,10 @@ tools: [
   "Jira"
 ]
 description: "A custom game engine written in C++ made in the third year of my
-game development bachelor at  [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html).The project lasted 32 weeks, including an 8 week pre-production phase. I joined the project in week 9 as both an engine and tools programmer. You can read more about the project on [the website](http://projectsulphur.com/)."
+game development bachelor at  [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html).The project lasted 32 weeks, including an 8 week pre-production phase. I joined the project in week 9 as both an engine and tools programmer. My last week working on the project was week 24, in week 25 I joined the [Arboreal](../arboreal) team. There's more information about the project on [the website](http://projectsulphur.com/)."
 slug: "project_sulphur"
 trailer: ["youtube", "h2-_VLGCZwM"]
-keywords: ["engine", "ps4", "windows"]
+keywords: ["tool", "engine", "ps4", "windows"]
 contributions: [
   "Engine programming in C++",
   "Transform system in C++",

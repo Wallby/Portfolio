@@ -16,12 +16,14 @@
         <div class="inner">
           <div class="intro">
             <!-- Title -->
-            {{ $image_path := (printf "img%s" $.RelPermalink) }}
-            {{ $video_path := (printf "vid%s" $.RelPermalink) }}
-            {{ if (fileExists (printf "static/%slogo.png" $image_path)) }}
+            {{ $imagefolder_path := printf "img%s" $.RelPermalink }}
+			{{ $imagefolder_url := printf "%s/%s" .Site.BaseURL $imagefolder_path }}
+            {{ $videofolder_path := printf "vid%s" $.RelPermalink }}
+			{{ $videofolder_url := printf "%s/%s" .Site.BaseURL $videofolder_path }}
+            {{ if fileExists (printf "static/%slogo.png" $imagefolder_path) }}
             <div class="row">
               <div class="12u" id="logo">
-                <img src="{{ .Site.BaseURL }}/{{ $image_path }}logo.png" alt="{{ .Title }}" style="max-width: 100%; margin-left: auto; margin-right: auto; display: block;">
+                <img src="{{ $imagefolder_url }}logo.png" alt="{{ .Title }}" style="max-width: 24em; margin-left: auto; margin-right: auto; display: block;">
               </div>
             </div>
             {{ else }}
@@ -42,13 +44,20 @@
                 </div>
                 {{ end }}
                 {{ else }}
+				{{ $a := index .Params.trailer 0 }}
+				{{ $video_url := "" }}
+				{{ if or (or (hasPrefix $a "https:") (hasPrefix $a "http:")) (hasPrefix $a "//") }}
+				{{ $video_url = $a }}
+				{{ else }}
+				{{ $video_url = printf "%s%s" $videofolder_url $a }}
+				{{ end }}
                 <video style="width: 100%;height: 100%;" controls>
-  <source src="{{ .Site.BaseURL }}/{{ $video_path }}{{ index .Params.trailer 0 }}" type="video/{{ trim (path.Ext (index .Params.trailer 0)) "." }}">
-Your browser does not support the video tag.
-</video>
+                  <source src="{{ $video_url }}" type="video/{{ trim (path.Ext $video_url) "." }}">
+                  Your browser does not support the video tag.
+                </video>
                 {{ end }}
                 {{ else }}
-                <img src="{{ .Site.BaseURL }}/{{ $image_path }}{{ .Params.poster }}" style="width: 100%;">
+                <img src="{{ $imagefolder_url }}{{ .Params.poster }}" style="width: 100%;">
                 {{ end }}
               </div>
               <div class="4u 12u$(small)" id="contributions">

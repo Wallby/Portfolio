@@ -7,9 +7,9 @@ description: "To get accepted into [IGAD](https://www.nhtv.nl/ENG/bachelors/crea
 download: jellyventure.zip
 slug: "jellyventure"
 poster: "poster.jpg"
-keywords: ["jelly"]
+keywords: ["game", "windows", "downloadable"]
 contributions: [
-  "All programming",
+  "Programming in C++ using SDL2.0 for graphics, sound, and input",
   "Made sprites in photoshop and paint.net",
   "Made sounds in audacity"
 ]

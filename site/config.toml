@@ -23,14 +23,14 @@ disableKinds = ["taxonomy", "section"]
 
   # Just a custom image variable, please define it in .md files for content.
   image = ""
-  
+
   # Technologies
   [[params.technologies]]
     name = "Unity"
     url = "https://unity3d.com/"
     image = "/img/unity.png"
     smooth_image = true
-    
+
   [[params.technologies]]
     name = "Unreal Engine"
     url = "https://www.unrealengine.com/en-US/blog"
@@ -47,18 +47,30 @@ disableKinds = ["taxonomy", "section"]
     url = "https://www.eclipse.org/eclipseide/"
     image = "/img/eclipse.png"
     smooth_image = true
-  
+
   [[params.technologies]]
     name = "Make"
     url = "https://www.gnu.org/software/make/"
     image = "/img/make.png"
     smooth_image = true
-  
+
   [[params.technologies]]
     name = "Batch"
     image = "/img/batch.png"
     smooth_image = true
-  
+
+  [[params.technologies]]
+    name = "Git"
+    url = "https://www.git-scm.com/"
+    image = "/img/git.png"
+    smooth_image = true
+    last_in_column = true
+
+  [[params.technologies]]
+    name = "Excel"
+    url = "https://support.microsoft.com/en-us/office/download-and-install-or-reinstall-office-2019-office-2016-or-office-2013-7c695b06-6d1a-4917-809c-98ce43f86479"
+    image = "/img/excel.svg"
+
   [[params.technologies]]
     name = "HacknPlan"
     url = "https://www.hacknplan.com/"
@@ -70,13 +82,8 @@ disableKinds = ["taxonomy", "section"]
     url = "https://www.jira.com/"
     image = "/img/jira.png"
     smooth_image = true
-    
-  [[params.technologies]]
-    name = "Git"
-    url = "https://www.git-scm.com/"
-    image = "/img/git.png"
-    smooth_image = true
-  
+    last_in_column = true
+
   [[params.technologies]]
     name = "Win32"
     url = "https://learn.microsoft.com/en-us/windows/win32/apiindex/windows-api-list"
@@ -139,31 +146,37 @@ disableKinds = ["taxonomy", "section"]
 
     [[params.tiles.showcase]]
       title = "arguments-mini"
-      subtitle = "A library for parsing commandline arguments written in C++"
+      subtitle = "A library for parsing commandline arguments I made as a hobby"
       image = "arguments_mini.jpg"
       url = "project/arguments_mini"
 
     [[params.tiles.showcase]]
       title = "Project Sulphur"
-      subtitle = "A custom engine for Windows and PS4 written in C++"
+      subtitle = "An engine for Windows and PS4 for which I did engine programming"
       image = "project_sulphur.jpg"
       url = "project/project_sulphur"
 
     [[params.tiles.showcase]]
+      title = "Arboreal"
+      subtitle = "An adventure game for which I did Quality Assurance"
+      image = "arboreal.jpg"
+      url = "project/arboreal"
+
+    [[params.tiles.showcase]]
       title = "AGR"
-      subtitle = "An anti-grav racer built in a custom engine for Windows and PS4 written in C++"
+      subtitle = "An anti-grav racer for PS4 and Windows made in a custom engine for which I did graphics programming"
       image = "agr.jpg"
       url = "project/agr"
 
     [[params.tiles.showcase]]
       title = "Mayor"
-      subtitle = "An atmospheric city management game made in two and a half weeks"
+      subtitle = "An atmospheric city management game made in two and a half weeks for which I was Scrum Master"
       image = "mayor.jpg"
       url = "project/mayor"
 
     [[params.tiles.showcase]]
       title = "Halo Hunters"
-      subtitle = "A fast-paced shooter made in two weeks"
+      subtitle = "A fast-paced shooter made in two weeks which I helped develop"
       image = "halo_hunters.jpg"
       url = "project/halo_hunters"
 
@@ -175,7 +188,7 @@ disableKinds = ["taxonomy", "section"]
 
     [[params.tiles.showcase]]
       title = "Jellyventure"
-      subtitle = "A game with the theme jelly written in C++ using SDL2"
+      subtitle = "A game with the theme jelly I made to get into my bachelor"
       image = "jellyventure.jpg"
       url = "project/jellyventure"
 

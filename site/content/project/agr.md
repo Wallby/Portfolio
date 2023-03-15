@@ -12,7 +12,7 @@ foundations for cross-platform rendering and implement several effects,
 including shadow mapping."
 slug: "agr"
 trailer: ["2022_agr_gameplay.mp4"]
-keywords: ["engine", "ps4", "windows"]
+keywords: ["tool", "engine", "ps4", "windows"]
 contributions: [
   "Shadow mapping in DX11 and GNMX",
   "Particle systems in DX11 and GNMX",
