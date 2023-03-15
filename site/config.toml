@@ -145,12 +145,6 @@ disableKinds = ["taxonomy", "section"]
     # Display your showcases here.
 
     [[params.tiles.showcase]]
-      title = "arguments-mini"
-      subtitle = "A library for parsing commandline arguments I made as a hobby"
-      image = "arguments_mini.jpg"
-      url = "project/arguments_mini"
-
-    [[params.tiles.showcase]]
       title = "Project Sulphur"
       subtitle = "An engine for Windows and PS4 for which I did engine programming"
       image = "project_sulphur.jpg"
@@ -191,6 +185,12 @@ disableKinds = ["taxonomy", "section"]
       subtitle = "A game with the theme jelly I made to get into my bachelor"
       image = "jellyventure.jpg"
       url = "project/jellyventure"
+
+    [[params.tiles.showcase]]
+      title = "arguments-mini"
+      subtitle = "A library for parsing commandline arguments I made as a hobby"
+      image = "arguments_mini.jpg"
+      url = "project/arguments_mini"
 
     # You can make more showcases by copy and pasting the code above
 
