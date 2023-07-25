@@ -3409,14 +3409,14 @@
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../img/banner.jpg");
+		background-image: url("../img/banner.gif");
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
 		padding: 6em 0 2em 0 ;
 		background-attachment: fixed;
-		background-position: center;
+		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-bottom: 0 !important;
