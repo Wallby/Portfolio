@@ -1,12 +1,12 @@
 ---
 title: "Mayor"
+subtitle: "An atmospheric city management game made in two and a half weeks for which I was Scrum Master"
 tools: [
   "Unreal Engine",
   "HacknPlan",
   "Excel"
 ]
 description: "Mayor is a city management game made in the second year of my game development bachelor at  [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html). The game was made from concept to final product in a period of two and a half weeks as part of a so-called game marmalade (i.e. an extended game jam). Another marmalade game is [Halo Hunters](../halo_hunters)."
-slug: "mayor"
 trailer: ["youtube","WXgxsMuIlmc"]
 keywords: ["game", "game marmalade"]
 contributions: [
@@ -14,9 +14,11 @@ contributions: [
   "Traffic system in Blueprints",
   "Created spreadsheet for calculating working hours",
   ]
-date: 2017-10-31T21:28:43-05:00
+date: 2016-10-01
 draft: false
 ---
+
+<!-- NOTE: "date:" is not accurate, year and month are estimated to assure correct order on list page, day is random -->
 
 ## Scrum master
 
@@ -25,7 +27,7 @@ During a workshop I saw someone gathering the available hours of each team membe
 <div class="row">
   <div class="12u">
     <figure>
-      <img src="/img/project/mayor/hoursspreadsheet_individual.jpg" style="width: 100%;max-width: 30em;">
+      <img src="/img/school_project/mayor/hoursspreadsheet_individual.jpg" style="width: 100%;max-width: 30em;">
     </figure>
   </div>
 </div>
@@ -35,7 +37,7 @@ On another worksheet I added a summary calculating the total number of hours ava
 <div class="row">
   <div class="12u">
     <figure>
-      <img src="/img/project/mayor/hoursspreadsheet_total.jpg" style="width: 100%;max-width: 30em;">
+      <img src="/img/school_project/mayor/hoursspreadsheet_total.jpg" style="width: 100%;max-width: 30em;">
     </figure>
   </div>
 </div>
@@ -51,14 +53,14 @@ The task I spent most of my non-scrum-master time on was the traffic system, int
 <div class="row">
   <div class="6u 12u$(small)">
     <figure>
-      <img src="/img/project/mayor/traffic_nodes_in_editor.png" style="width: 100%;max-width: 300px;">
+      <img src="/img/school_project/mayor/traffic_nodes_in_editor.png" style="width: 100%;max-width: 300px;">
       <figcaption>The traffic node gizmos as seen in the editor</figcaption>
     </figure>
   </div>
   <br>
   <div class="6u 12u$(small)">
     <figure>
-      <img src="/img/project/mayor/traffic_node_inspector.png" style="width: 100%;max-width: 300px;">
+      <img src="/img/school_project/mayor/traffic_node_inspector.png" style="width: 100%;max-width: 300px;">
       <figcaption>The inspector view on a traffic node actor</figcaption>
     </figure>
     <br>
@@ -70,7 +72,7 @@ The task I spent most of my non-scrum-master time on was the traffic system, int
   <p class="6u 12u$(small)">A central traffic manager is responsible for the spawning, updating, and despawning of the cars.</p>
   <div class="6u 12u$(small)">
     <figure>
-      <img src="/img/project/mayor/traffic_manager.png" style="width: 100%;max-width: 300px;">
+      <img src="/img/school_project/mayor/traffic_manager.png" style="width: 100%;max-width: 300px;">
       <figcaption>The inspector view on the traffic manager actor</figcaption>
     </figure>
   </div>
@@ -78,7 +80,7 @@ The task I spent most of my non-scrum-master time on was the traffic system, int
 
 <div class="row">
   <div class="6u 12u$(small)">
-    <img src="/img/project/mayor/traffic.gif" style="width: 100%;max-width: 400px;">
+    <img src="/img/school_project/mayor/traffic.gif" style="width: 100%;max-width: 400px;">
   </div>
   <p class="6u 12u$(small)">The car actors themselves are actually all on the center of the street, but the model itself is offset to one side (kudos to the artist who inspired this simple and neat solution).</p>
 </div>

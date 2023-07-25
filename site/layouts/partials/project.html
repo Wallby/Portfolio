@@ -17,9 +17,9 @@
           <div class="intro">
             <!-- Title -->
             {{ $imagefolder_path := printf "img%s" $.RelPermalink }}
-			{{ $imagefolder_url := printf "%s/%s" .Site.BaseURL $imagefolder_path }}
+            {{ $imagefolder_url := printf "%s/%s" .Site.BaseURL $imagefolder_path }}
             {{ $videofolder_path := printf "vid%s" $.RelPermalink }}
-			{{ $videofolder_url := printf "%s/%s" .Site.BaseURL $videofolder_path }}
+            {{ $videofolder_url := printf "%s/%s" .Site.BaseURL $videofolder_path }}
             {{ if fileExists (printf "static/%slogo.png" $imagefolder_path) }}
             <div class="row">
               <div class="12u" id="logo">
@@ -99,7 +99,8 @@
               <div class="4u$ 12u$(small)">
                 <ul class="actions vertical">
                   <li>
-                    <a href="{{ .Params.download }}" class="button big icon fa-download" {{ if (not (strings.Contains .Params.download "/")) }}download{{ end }}>Download</a>
+                    <!-- below assumes that external URL contains ":" (e.g. "http:" or "https:") -->
+                    <a href="{{ .Params.download }}" class="button big icon fa-download" {{ if (not (strings.Contains .Params.download ":")) }}download{{ end }}>Download</a>
                   </li>
                 </ul>
               </div>

@@ -4,7 +4,7 @@ languageCode = "en-us"
 title = "Maarten ten Velden"
 theme = "forty"
 ignoreErrors = ["error-disable-taxonomy"]
-disableKinds = ["taxonomy", "section"]
+disableKinds = ["taxonomy"]
 
 # https://www.cloudhadoop.com/hugo-raw-html-committed/
 [markup]
@@ -114,10 +114,17 @@ disableKinds = ["taxonomy", "section"]
     menu = "Menu"
     # Optional logo as brand stored in img/
     # logo = "logo.png"
+    
+    [[params.navigation.projecttypes]]
+      name = "School"
+      url = "school_project"
+    [[params.navigation.projecttypes]]
+      name = "Personal"
+      url = "personal_project"
 
     [[params.navigation.links]]
       name = "Home"
-      url = "#"
+      url = ""
 
     [[params.navigation.links]]
       name = "Contact"
@@ -127,6 +134,10 @@ disableKinds = ["taxonomy", "section"]
       name = "About me"
       url = "page/about"
 
+    #[[params.navigation.button1]]
+    #  name = ""
+    #  url = ""
+    
     #[[params.navigation.button2]]
     #  name = ""
     #  url = ""
@@ -141,65 +152,16 @@ disableKinds = ["taxonomy", "section"]
 
   # Tiles Section
   [params.tiles]
-    enable = true
-    # Display your showcases here.
-
-    [[params.tiles.showcase]]
-      title = "Project Sulphur"
-      subtitle = "An engine for Windows and PS4 for which I did engine programming"
-      image = "project_sulphur.jpg"
-      url = "project/project_sulphur"
-
-    [[params.tiles.showcase]]
-      title = "Arboreal"
-      subtitle = "An adventure game for which I did Quality Assurance"
-      image = "arboreal.jpg"
-      url = "project/arboreal"
-
-    [[params.tiles.showcase]]
-      title = "AGR"
-      subtitle = "An anti-grav racer for PS4 and Windows made in a custom engine for which I did graphics programming"
-      image = "agr.jpg"
-      url = "project/agr"
-
-    [[params.tiles.showcase]]
-      title = "Mayor"
-      subtitle = "An atmospheric city management game made in two and a half weeks for which I was Scrum Master"
-      image = "mayor.jpg"
-      url = "project/mayor"
-
-    [[params.tiles.showcase]]
-      title = "Halo Hunters"
-      subtitle = "A fast-paced shooter made in two weeks which I helped develop"
-      image = "halo_hunters.jpg"
-      url = "project/halo_hunters"
-
-    [[params.tiles.showcase]]
-      title = "BaRock Battles"
-      subtitle = "A party game made for the Global Jam of 2016"
-      image = "barock_battles.jpg"
-      url = "project/barock_battles"
-
-    [[params.tiles.showcase]]
-      title = "Jellyventure"
-      subtitle = "A game with the theme jelly I made to get into my bachelor"
-      image = "jellyventure.jpg"
-      url = "project/jellyventure"
-
-    [[params.tiles.showcase]]
-      title = "arguments-mini"
-      subtitle = "A library for parsing commandline arguments I made as a hobby"
-      image = "arguments_mini.jpg"
-      url = "project/arguments_mini"
-
-    # You can make more showcases by copy and pasting the code above
-
-  [params.blog]
-    # All blogs defined in their own files. You can find example blogs
-    # at 'exampleSite/content/blogs'. Copy the 'blogs' folder into the 'content' directory
-    # at the root of this Hugo site.
-    # For more informtion take a look at the README.
-    # To add more blogs just copy and paste the code.
+    showcase = [
+      "school_project/project_sulphur",
+      "school_project/arboreal",
+      "school_project/agr",
+      "school_project/mayor",
+      "school_project/halo_hunters",
+      "school_project/barock_battles",
+      "personal_project/jellyventure",
+      "personal_project/arguments_mini"
+    ]
 
   # Contact section
   [params.contact]

@@ -1,23 +1,10 @@
-/* Tiles */
+/* Nav */
 
-	/* last-child = "Your Project" box */
-	.tiles article:last-child header {
-		margin-right: 0;
-	}
-	.tiles article:last-child img {
-		margin-right: auto;
-		height: 50%;
-		max-height: 128px;
-	}
-	.tiles article:last-child:before {
-		background-color: transparent;
-
-	}
-	@media screen and (min-width: 481px) and (max-width: 736px) {
-		.tiles article:last-child img {
-			left: -2em;
+		/* color of link to current page */
+		a.active {
+			pointer-events: none;
+			color: #53e3fb;
 		}
-	}
 
 /* Contact */
 

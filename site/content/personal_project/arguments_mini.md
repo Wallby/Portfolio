@@ -1,16 +1,18 @@
 ---
 title: "arguments-mini"
+subtitle: "A library for parsing commandline arguments I made as a hobby"
 tools: [
   "Make"
 ]
 description: "A single .cpp file library written in \"C linkable C++\" (C++ with inline new and delete) for parsing commandline arguments."
-slug: "arguments_mini"
-poster: "poster.gif"
-keywords: ["tool", "library", "linux", "windows", "downloadable"]
 download: "https://github.com/Wallby/arguments-mini"
-date: 2022-01-28T16:18:28+01:00
+keywords: ["tool", "library", "linux", "windows", "downloadable"]
+poster: "poster.gif"
+date: 2022-01-28
 draft: false
 ---
+
+<!-- NOTE: "date:" is not exact, date and month are not checked -->
 
 ## [arguments-mini-test](https://github.com/Wallby/arguments-mini-test)
 
@@ -21,7 +23,7 @@ Before release [0.2.1 (patch for beta)](https://github.com/Wallby/arguments-mini
     <figure>
       <!-- image-border and no-image-border here as 919px is width of image (i.e. "border-width") -->
       <div id="image-border">
-        <img src="/img/project/arguments_mini/arguments_mini_test.png" id="no-image-border" style="width: 100%;max-width: 919px;">
+        <img src="/img/personal_project/arguments_mini/arguments_mini_test.png" id="no-image-border" style="width: 100%;max-width: 919px;">
       </div>
       <figcaption style="text-align: center;">Output of argument-mini-test 0.2.1</figcaption>
     </figure>

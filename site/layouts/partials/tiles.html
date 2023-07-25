@@ -1,0 +1,6 @@
+{{ "<!-- Header -->" | safeHTML }}
+<section id="one" class="tiles">
+	{{ range . }}
+	{{ partial "tile.html" . }}
+	{{ end }}
+</section>

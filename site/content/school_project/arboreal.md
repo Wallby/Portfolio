@@ -1,5 +1,6 @@
 ---
 title: "Arboreal"
+subtitle: "An adventure game for which I did Quality Assurance"
 tools: [
   "Unreal Engine",
   "Jira",
@@ -7,7 +8,6 @@ tools: [
 ]
 description: "Arboreal is a game made at my game development bachelor at [IGAD](https://www.nhtv.nl/ENG/bachelors/creative-media-and-game-technologies/startpage.html) in the third year. I joined as the sole dedicated tester in the last quarter of the year. I spent the first 3 quarters of the first year working on other projects including [Project Sulphur](../project_sulphur)."
 download: https://store.steampowered.com/app/881300/Arboreal/
-slug: "arboreal"
 trailer: ["https://cdn.akamai.steamstatic.com/steam/apps/256721888/movie480.webm"]
 keywords: ["game", "windows", "downloadable"]
 contributions: [
@@ -15,9 +15,11 @@ contributions: [
   "Reporting problems in Jira",
   "Creating an automated spreadsheet to keep track of problems over time"
 ]
-date: 2017-10-31T21:28:43-05:00
+date: 2018-06-01
 draft: false
 ---
+
+<!-- NOTE: "date:" is not exact, month is estimated to assure correct order on list page, day is random -->
 
 ## Automated spreadsheet
 
@@ -28,7 +30,7 @@ The spreadsheet has 3 builtin worksheets, and to use the spreadsheet exported fr
 <div class="row">
   <div class="12u">
     <figure>
-      <img src="/img/project/arboreal/spreadsheet_worksheets.jpg" style="width: 100%;max-width: 30em;">
+      <img src="/img/school_project/arboreal/spreadsheet_worksheets.jpg" style="width: 100%;max-width: 30em;">
     </figure>
   </div>
 </div>
@@ -37,7 +39,7 @@ The overview worksheet looks as follows..
 <div class="row">
   <div class="12u">
     <figure>
-      <img src="/img/project/arboreal/spreadsheet_overview_worksheet.jpg" style="width: 100%;">
+      <img src="/img/school_project/arboreal/spreadsheet_overview_worksheet.jpg" style="width: 100%;">
       <figcaption>The overview worksheet as seen when zoomed out</figcaption>
     </figure>
   </div>
@@ -46,7 +48,7 @@ The overview worksheet looks as follows..
 <div class="row">
   <div class="6u 12u$(small)">
     <figure>
-      <img src="/img/project/arboreal/spreadsheet_input_and_numbers.jpg" style="width: 100%;max-width: 250px;">
+      <img src="/img/school_project/arboreal/spreadsheet_input_and_numbers.jpg" style="width: 100%;max-width: 250px;">
 	  <br>
 	  <p>"Data Sheet" is the name of the worksheet which is expected to be one that was exported by Jira (i.e. the format of this is assumed).
 	  <br>
@@ -58,7 +60,7 @@ The overview worksheet looks as follows..
   <br>
   <div class="6u 12u$(small)">
     <figure>
-      <img src="/img/project/arboreal/spreadsheet_totals.jpg" style="width: 100%;max-width: 350px;">
+      <img src="/img/school_project/arboreal/spreadsheet_totals.jpg" style="width: 100%;max-width: 350px;">
     </figure>
     <br>
     <p>"Totals" here means the performance of the entire team, not any individual team member. In hindsight I think replacing "Total Bugs" here with "Open Bugs" and replacing "Open Bugs" with "Bugs Opened This Week" would make sense. This way ideally the "Open Bugs" would be decreasing even if the "Bugs Opened This Week" is increasing.</p>
@@ -68,7 +70,7 @@ The overview worksheet looks as follows..
 <div class="row">
   <div class="6u 12u$(small)">
     <figure>
-      <img src="/img/project/arboreal/spreadsheet_individual.jpg" style="width: 100%;max-width: 350px;">
+      <img src="/img/school_project/arboreal/spreadsheet_individual.jpg" style="width: 100%;max-width: 350px;">
 	  <br>
 	  <p>The individual section shows metrics per team member to see who are fixing bugs and how fast. In hindsight I think priority might have been a good addition, which was exported by Jira, but I think what I managed to implement was a good start.</p>
     </figure>
@@ -76,7 +78,7 @@ The overview worksheet looks as follows..
   <br>
   <div class="6u 12u$(small)">
     <figure>
-      <img src="/img/project/arboreal/spreadsheet_leaderboard.jpg" style="width: 100%;max-width: 350px;">
+      <img src="/img/school_project/arboreal/spreadsheet_leaderboard.jpg" style="width: 100%;max-width: 350px;">
     </figure>
     <br>
     <p>In the last week of the the project I finished an idea I had, namely the leaderboard. I shared an image in Slack, and it was well received by the team. Some people said that if was posted every week it would motivate them. However, due to this being completed in the last week it was too late to actually use it.</p>
@@ -88,7 +90,7 @@ The other worksheets contain data used by the overview worksheet.
   <div class="12u">
     <p>The individual effort worksheet looks as follows..</p>
     <figure>
-      <img src="/img/project/arboreal/spreadsheet_individual_effort_worksheet.jpg" style="width: 100%;">
+      <img src="/img/school_project/arboreal/spreadsheet_individual_effort_worksheet.jpg" style="width: 100%;">
       <figcaption>The individual effort worksheet as seen when zoomed out</figcaption>
     </figure>
     <br>
@@ -99,7 +101,7 @@ The other worksheets contain data used by the overview worksheet.
   <div class="12u">
     <p>The overall effort worksheet looks as follows..</p>
     <figure>
-      <img src="/img/project/arboreal/spreadsheet_overall_effort_worksheet.jpg" style="width: 100%;max-width: 600px;">
+      <img src="/img/school_project/arboreal/spreadsheet_overall_effort_worksheet.jpg" style="width: 100%;max-width: 600px;">
     </figure>
     <br>
     <p>The fix rate here is the per week fix rate summarized on the overview worksheet.</p>
