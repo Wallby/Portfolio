@@ -154,10 +154,8 @@ disableKinds = ["taxonomy"]
   [params.tiles]
     showcase = [
       "school_project/project_sulphur",
-      "school_project/arboreal",
       "school_project/agr",
       "school_project/mayor",
-      "school_project/halo_hunters",
       "school_project/barock_battles",
       "personal_project/jellyventure",
       "personal_project/arguments_mini"
