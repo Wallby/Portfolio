@@ -56,7 +56,20 @@ disableKinds = ["taxonomy"]
 
   [[params.technologies]]
     name = "Batch"
+    url = "https://en.wikipedia.org/wiki/Batch_file"
     image = "/img/batch.png"
+    smooth_image = true
+
+  [[params.technologies]]
+    name = "Powershell"
+    url = "https://learn.microsoft.com/en-gb/powershell/"
+    image = "/img/powershell.png"
+    smooth_image = true
+
+  [[params.technologies]]
+    name = "Bourne shell"
+    url = "https://en.wikipedia.org/wiki/Bourne_shell"
+    image = "/img/bourne_shell.png"
     smooth_image = true
 
   [[params.technologies]]
@@ -100,6 +113,12 @@ disableKinds = ["taxonomy"]
     name = "Vulkan"
     url = "https://www.vulkan.org/"
     image = "/img/vulkan.png"
+    smooth_image = true
+
+  [[params.technologies]]
+    name = "SDL"
+    url = "https://www.libsdl.org/"
+    image = "/img/sdl.png"
     smooth_image = true
 
   # 404 error customization

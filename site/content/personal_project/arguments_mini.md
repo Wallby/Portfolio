@@ -2,7 +2,10 @@
 title: "arguments-mini"
 subtitle: "A library for parsing commandline arguments I made as a hobby"
 tools: [
-  "Make"
+  "Make",
+  "Batch",
+  "Bourne shell",
+  "Git"
 ]
 description: "A single .cpp file library written in \"C linkable C++\" (C++ with inline new and delete) for parsing commandline arguments."
 download: "https://github.com/Wallby/arguments-mini"
