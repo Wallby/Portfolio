@@ -7,7 +7,7 @@ tools: [
   "Bourne shell",
   "Git"
 ]
-description: "Several \"single file\" (i.e. the \"\" because in some cases there are two identically named files, namely one .h and one .c(pp)) libraries, some written in C linkeable C++ (i.e. not requiring linking to the C++ standard library binary), others written in C and one in Makefile. All libraries work on both windows and linux."
+description: "Several single include libraries (i.e. only include one `.h` file ever). Also only at most one file to compile (i.e. a `.c`/`.cpp` file). The C++ files are written in such a manner that C code can link to it (i.e. not requiring linking to the C++ standard library binary). There are also C file libraries and one library is only a Makefile. All libraries work on both Windows and Linux."
 download: "https://github.com/Wallby?tab=repositories&q=in%3Aname+-mini&type=&language=&sort="
 keywords: ["tool", "library", "linux", "windows", "downloadable"]
 poster: "poster.gif"
