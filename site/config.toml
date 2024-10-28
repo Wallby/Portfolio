@@ -26,6 +26,12 @@ disableKinds = ["taxonomy"]
 
   # Technologies
   [[params.technologies]]
+    name = "Supercollider"
+    url = "https://supercollider.github.io/"
+    image = "/img/supercollider.svg"
+    smooth_image = true
+
+  [[params.technologies]]
     name = "Unity"
     url = "https://unity3d.com/"
     image = "/img/unity.png"
@@ -43,9 +49,9 @@ disableKinds = ["taxonomy"]
     image = "/img/visual_studio.svg"
 
   [[params.technologies]]
-    name = "Eclipse IDE"
-    url = "https://www.eclipse.org/eclipseide/"
-    image = "/img/eclipse.png"
+    name = "CMake"
+    url = "https://cmake.org/"
+    image = "/img/cmake.svg"
     smooth_image = true
 
   [[params.technologies]]
@@ -71,12 +77,6 @@ disableKinds = ["taxonomy"]
     url = "https://en.wikipedia.org/wiki/Bourne_shell"
     image = "/img/bourne_shell.png"
     smooth_image = true
-
-  [[params.technologies]]
-    name = "Git"
-    url = "https://www.git-scm.com/"
-    image = "/img/git.png"
-    smooth_image = true
     last_in_column = true
 
   [[params.technologies]]
@@ -85,9 +85,9 @@ disableKinds = ["taxonomy"]
     image = "/img/excel.svg"
 
   [[params.technologies]]
-    name = "HacknPlan"
-    url = "https://www.hacknplan.com/"
-    image = "/img/hacknplan.png"
+    name = "Audacity"
+    url = "https://www.audacityteam.org/"
+    image = "/img/audacity.svg"
     smooth_image = true
 
   [[params.technologies]]
@@ -95,7 +95,61 @@ disableKinds = ["taxonomy"]
     url = "https://www.jira.com/"
     image = "/img/jira.png"
     smooth_image = true
+
+  [[params.technologies]]
+    name = "Trello"
+    url = "https://trello.com/"
+    image = "/img/trello.png"
+    smooth_image = true
+
+  [[params.technologies]]
+    name = "HacknPlan"
+    url = "https://www.hacknplan.com/"
+    image = "/img/hacknplan.png"
+    smooth_image = true
+
+  [[params.technologies]]
+    name = "Git"
+    url = "https://www.git-scm.com/"
+    image = "/img/git.png"
+    smooth_image = true
+
+  [[params.technologies]]
+    name = "Perforce"
+    url = "https://www.perforce.com/downloads/helix-visual-client-p4v"
+    image = "/img/perforce.png"
+    smooth_image = true
     last_in_column = true
+
+  [[params.technologies]]
+    name = "ChromeOS"
+    url = "https://chromeos.google/products/chromeos-flex/"
+    image = "/img/chrome.svg"
+    smooth_image = false
+
+  [[params.technologies]]
+    name = "PS4"
+    url = "https://en.wikipedia.org/wiki/PlayStation_4_system_software#System"
+    image = "/img/ps4.png"
+    smooth_image = true
+
+  [[params.technologies]]
+    name = "Vulkan"
+    url = "https://www.vulkan.org/"
+    image = "/img/vulkan.png"
+    smooth_image = true
+
+  [[params.technologies]]
+    name = "DirectX 11"
+    url = "https://en.wikipedia.org/wiki/DirectX"
+    image = "/img/directx.png"
+    smooth_image = true
+
+  [[params.technologies]]
+    name = "DirectX 12"
+    url = "https://en.wikipedia.org/wiki/DirectX"
+    image = "/img/directx.png"
+    smooth_image = true
 
   [[params.technologies]]
     name = "Win32"
@@ -108,12 +162,6 @@ disableKinds = ["taxonomy"]
     url = "https://x.org/releases/current/doc/libX11/libX11/libX11.html"
     image = "/img/xlib.ico"
     smooth_image = false
-
-  [[params.technologies]]
-    name = "Vulkan"
-    url = "https://www.vulkan.org/"
-    image = "/img/vulkan.png"
-    smooth_image = true
 
   [[params.technologies]]
     name = "SDL"

@@ -5,8 +5,7 @@ tools: [
   "Make",
   "Batch",
   "Bourne shell",
-  "Git",
-  "Eclipse IDE"
+  "Git"
 ]
 description: "Several \"single file\" (i.e. the \"\" because in some cases there are two identically named files, namely one .h and one .c(pp)) libraries, some written in C linkeable C++ (i.e. not requiring linking to the C++ standard library binary), others written in C and one in Makefile. All libraries work on both windows and linux."
 download: "https://github.com/Wallby?tab=repositories&q=in%3Aname+-mini&type=&language=&sort="
