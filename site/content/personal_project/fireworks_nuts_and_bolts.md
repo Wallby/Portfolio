@@ -11,7 +11,7 @@ tools: [
 ]
 description: "This is my first real project I used CMake with. I took some inspiration from [*-mini](../asterisk_mini). All libraries are written in C-linkeable C++, for which I made up the extensions `.h.hpp` and `.c.cpp`."
 download: "https://gitlab.com/fireworks-nuts-and-bolts"
-poster: "poster.jpg"
+trailer: ["2024_footage.mp4"]
 date: 2024-01-01
 draft: false
 ---
