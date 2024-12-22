@@ -75,7 +75,7 @@
                 <div>
                   <h4>What I used</h4>
                   {{ range $i := .Params.tools }}
-                  {{ range $j := $.Site.Params.technologies }}
+                  {{ range $j := $.Site.Params.technologies | append $.Site.Params.other_technologies }}
                   {{ if eq $i $j.name}}
                   <div style="display:inline;margin-right: 10px;">
                     {{ partial "technology.html" $j }}

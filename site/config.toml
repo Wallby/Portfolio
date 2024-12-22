@@ -169,6 +169,11 @@ disableKinds = ["taxonomy"]
     image = "/img/sdl.png"
     smooth_image = true
 
+  [[params.other_technologies]]
+    name = "Redstone"
+    image = "/img/redstone.webp"
+    smooth_image = false
+
   # 404 error customization
   [params.error404]
     heading = "Page couldn't be found"
@@ -220,15 +225,15 @@ disableKinds = ["taxonomy"]
   # Tiles Section
   [params.tiles]
     showcase = [
+      "personal_project/asterisk_mini",
       "personal_project/sound_modeling",
-      "personal_project/fireworks_nuts_and_bolts",
       "school_project/project_sulphur",
       "school_project/agr",
+      "school_project/arboreal",
       "school_project/mayor",
       "school_project/barock_battles",
       "personal_project/jellyventure",
-      "personal_project/asterisk_mini",
-      "personal_project/operating_system"
+      "personal_project/minecraft_hidden_campfire"
     ]
 
   # Contact section
