@@ -256,18 +256,23 @@ disableKinds = ["taxonomy"]
 
     [[params.footer.social]]
       icon = "fa-envelope"
-      url= "mailto:info@wallby.nl"
+      url = "mailto:info@wallby.nl"
       label = "Email"
       
     [[params.footer.social]]
       icon = "fa-linkedin"
-      url= "https://www.linkedin.com/in/maarten-ten-velden/"
+      url = "https://www.linkedin.com/in/maarten-ten-velden/"
       label = "LinkedIn"
             
     [[params.footer.social]]
       icon = "fa-github"
-      url= "https://www.github.com/Wallby"
+      url = "https://www.github.com/Wallby"
       label = "GitHub"
+    
+    [[params.footer.social]]
+      icon = "fa-gitlab"
+      url = "https://www.gitlab.com/Wallby"
+      label = "GitLab"
 
     [[params.footer.quicklinks]]
       text = "Design: "
