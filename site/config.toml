@@ -173,6 +173,12 @@ disableKinds = ["taxonomy"]
     name = "Redstone"
     image = "/img/redstone.webp"
     smooth_image = false
+  
+  [[params.other_technologies]]
+    name = "Portaudio"
+    url = "https://www.portaudio.com/"
+    image = "/img/portaudio.png"
+    smooth_image = false
 
   # 404 error customization
   [params.error404]
@@ -225,6 +231,7 @@ disableKinds = ["taxonomy"]
   # Tiles Section
   [params.tiles]
     showcase = [
+      "personal_project/fireworks_nuts_and_bolts",
       "personal_project/asterisk_mini",
       "personal_project/sound_modeling",
       "school_project/project_sulphur",
@@ -232,8 +239,7 @@ disableKinds = ["taxonomy"]
       "school_project/arboreal",
       "school_project/mayor",
       "school_project/barock_battles",
-      "personal_project/jellyventure",
-      "personal_project/minecraft_hidden_campfire"
+      "personal_project/jellyventure"
     ]
 
   # Contact section

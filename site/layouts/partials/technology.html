@@ -1,6 +1,6 @@
 {{ "<!-- Technology -->" | safeHTML}}
 <!-- neirest neighbour css.. https://stackoverflow.com/questions/7809345/html5-canvas-is-there-a-way-to-resize-image-with-nearest-neighbour-resampling-->
-<a style="vertical-align: middle; padding: 0.1em;" class="image"{{ if (isset . "url") }} href="{{ .url }}"{{ end }}>
+<a title="{{ .name }}" style="vertical-align: middle; padding: 0.1em;" class="image"{{ if (isset . "url") }} href="{{ .url }}"{{ end }}>
   {{ $pixelated := false }}
   {{ if (ne (path.Ext .image) ".svg") }}
   {{ if not .smooth_image }}
