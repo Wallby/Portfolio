@@ -107,18 +107,21 @@
               {{ end }}
             </div>
           </div>
-          {{ if gt .Content 0 }}
-          <a href="#two" id="scroll-notification" class="button scrolly">
+          {{ if .Content }}
+          <hr>
+          <a href="#two" id="scroll-notification" class="button big scrolly">
             <span class="icon fa-arrow-down"></span>
-              Read more
+            More
+            <!--
             <span class="icon fa-arrow-down"></span>
+            -->
           </a>
-          {{ end }}
           <div id="two" class="row">
             <div class="12u$">
               {{ .Content }}
             </div>
           </div>
+          {{ end }}
         </div>
       </section>
     </div>
@@ -205,21 +208,58 @@
 
   {{ "<!-- Scripts -->" | safeHTML}} {{ partial "js.html" . }}
   <script type="text/javascript">
-    function isScrollHidden() {
-      return $(window).scrollTop() > 50;
+    var scrollButton = $('#scroll-notification');
+    var scrollButtonEnabled;
+    var scrollButtonVisible;
+
+    function shouldScrollBeVisible() {
+      return $(window).scrollTop() <= 50;
+    }
+    function shouldScrollBeEnabled() {
+      //return scrollButton.css('display') != 'none';
+      return scrollButton.css('visibility') == 'visible';
     }
 
-    if (isScrollHidden()) {
-      $('#scroll-notification').hide();
-    }
+    function main() {
+      scrollButtonEnabled = shouldScrollBeEnabled();
+      scrollButtonVisible = shouldScrollBeVisible();
 
-    $(window).bind('scroll', function() {
-      if (isScrollHidden()) {
-        $('#scroll-notification').fadeOut(200);
-      } else {
-        $('#scroll-notification').fadeIn(200);
+      if (scrollButtonEnabled && !scrollButtonVisible) {
+        scrollButton.hide();
       }
-    });
+
+      $(window).bind('scroll', function() {
+        var wasScrollButtonVisible = scrollButtonVisible;
+        scrollButtonVisible = shouldScrollBeVisible();
+
+        console.log("scrollButtonEnabled is " + scrollButtonEnabled);
+        if(!scrollButtonEnabled) {
+          return;
+        }
+
+        if(scrollButtonVisible == wasScrollButtonVisible) {
+          return;
+        }
+
+        if (scrollButtonVisible) {
+          scrollButton.fadeIn(200);
+        } else {
+          scrollButton.fadeOut(200);
+        }
+      });
+      $(window).bind('resize', function() {
+        scrollButtonEnabled = shouldScrollBeEnabled();
+        if(scrollButtonEnabled) {
+          /* Upon reveal assure initially in correct state */
+          if (scrollButtonVisible) {
+            scrollButton.show();
+          } else {
+            scrollButton.hide();
+          }
+        }
+      });
+    }
+    main();
   </script>
 
 </body>

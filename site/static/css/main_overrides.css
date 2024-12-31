@@ -28,3 +28,23 @@
 			}
 
 		}
+
+/* Project */
+
+		.scrolly {
+			position: absolute;
+			/* Height of button is 3.5em
+			   Height of big button is 3em
+			   4.25 is also used for intro in main.css */
+			top: calc(100vh - 3em - 4.25rem - 0.5em);
+			right: 0.5em;
+			visibility: visible;
+		}
+
+		/*@media screen and (orientation: portrait) {*/
+		@media screen and (max-width: 736px) {
+			.scrolly {
+				/* Hide on portrait screens */
+				visibility: hidden;
+			}
+		}
