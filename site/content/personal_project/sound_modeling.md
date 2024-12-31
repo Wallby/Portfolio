@@ -16,6 +16,9 @@ draft: false
 ---
 
 <!-- NOTE: "date:" is not accurate -->
+
+## Spectrum analysis
+
 I used two main ways of analysing the reference, visual spectograms shown in the video, and also the following spectrum plot feature of Audacity..
 
 <div class="row">
@@ -23,6 +26,8 @@ I used two main ways of analysing the reference, visual spectograms shown in the
 <img style="width: 100%;max-width: 500px;" src="/img/personal_project/sound_modeling/spectrum_plot.jpg">
 </div>
 </div>
+
+## Sound programming
 
 The sound is generated using `VarSaw`, which can clearly be seen in the spectogram. The frequency of the `VarSaw` takes an `LFNoise0` as input to not gradually modify the frequency but do so at clear intervals. The output of the `VarSaw` I assigned to a variable called pressure, as this is what I thought to be trying to model, the pressure that changes at a clear interval due to the flute ball "cycling".
 

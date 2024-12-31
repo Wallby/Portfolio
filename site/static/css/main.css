@@ -3649,10 +3649,6 @@
 
 				}
 
-				#main > * > * > .intro {
-					height: calc(100vh - 4.25em); /* subtract menu bar and padding */
-				}
-
 		#main.alt {
 			background-color: transparent;
 			border-bottom: solid 1px rgba(212, 212, 255, 0.1);

@@ -11,10 +11,17 @@ description: "Several single include libraries (i.e. only include one `.h` file 
 download: "https://github.com/Wallby?tab=repositories&q=in%3Aname+-mini&type=&language=&sort="
 keywords: ["tool", "library", "linux", "windows", "downloadable"]
 poster: "poster.gif"
+contributions: [
+  "Multi-library project architecture",
+  "Makefile build pipeline",
+  "Cross platform Linux and Windows programming"
+]
 date: 2022-01-28
 draft: false
 ---
 <!-- NOTE: "date:" is not exact, date and month are not checked -->
+
+## Multiple library architecture
 
 Current libraries..
 * [tcp-mini](https://github.com/Wallby/tcp-mini) (C++ TCP library for running one server to which client(s) can connect, non blocking)
@@ -32,13 +39,24 @@ The first library I made was tcp-mini. I had never done socket programming befor
 
 As I learned and sought answers to questions I added more features, some of which became later libraries (array-mini, check-mini, test-mini and makefile-mini all were first experiments in other *-mini projects but then became clear enough to turn into libraries).
 
-## Compilation
+[For tcp-mini](https://github.com/Wallby/tcp-mini/releases) and [for arguments-mini](https://github.com/Wallby/arguments-mini/releases) I made several releases. I created [matching releases for arguments-mini-test](https://github.com/Wallby/arguments-mini-test) too when that was still in a separate repository. I also made releases [for tint-mini](https://github.com/Wallby/tint-mini/releases) and for [lcg-mini](https://github.com/Wallby/lcg-mini/releases). Some projects (array-mini, check-mini, clock-mini, sharedlibrary-mini, test-mini and makefile-mini) currently have no releases, which I think is mostly due to the repetition of Makefiles that makefile-mini (which is currently W.I.P.) aims to solve.
+
+All C/C++ \*-mini libraries have a macro variable `#define *_MINI_VERSION` (e.g. for tcp-mini `#define TCP_MINI_VERSION`).
+
+Headerguards use a macro `#define *_MINI_H` named after the file the guard is in (e.g. `#define TCP_MINI_H` for `tcp_mini.h`). Typenames except enum, variablenames and functionnames are prefixed with `*m_` (e.g. `tm_` for tcp-mini). Macros are prefixed with `*M_` (e.g. `CM_` for check-mini). Enums are prefixed with `E*M` (e.g. `ECM` for check-mini).
+
+Though there are \*-mini libraries that have the same function prefix (`am_` for both arguments-mini and array-mini, `tm_` for tcp-mini, tint-mini and test-mini), this is possible as long as each library contains different functions. There is a function `void *m_set_on_print(void(*a)(char*, FILE*));` in several \*-mini libraries, but thusfar this works as there are different types of libraries..
+1. libraries intended to be fast thus don't require printing functionality (e.g. array-mini and tint-mini)
+2. libaries intended to be reliable thus requiring printing functionality (e.g. arguments-mini and tcp-mini)
+3. libraries that contain an entry point and thus can print directly to stdout (e.g. test-mini which contains `__wrap_main` which calls `main`)
+
+All three types of library can be linked together, but there can only be one library of the 2nd type per letter (because of `*m_set_on_print`) and only one library of the 3rd type (as there can only be one entry point). There can be any number of libraries of the 1st type, of which clock-mini and check-mini are an example.
+
+## Build pipeline
 
 At first I used Eclipse. Later I switched to Makefiles and make and platform specific scripts (.bat for windows and no extension but `#! /bin/sh` at the top for linux) to retrieve the platform specific Makefile from a corresponding branch (using git-archive). I had never written a Makefile before and never used make, this was my first introduction to Makefiles and make.
 
 These first and platform-specific Makefiles I wrote were entirely duplicated. Currently most still are entirely duplicated, as makefile-mini is a W.I.P., but they're no longer platform specific.
-
-## Tests
 
 <div class="row">
   <div class="12u">
@@ -94,18 +112,3 @@ Later [memory leak detection by wrapping malloc and free was added](https://gith
 After these two features I switched from Eclipse to make. Using make required switching to a different folder/CLI window to run make there. I added a target `make andrun` to compile and run tests with one command. At first this was fine, but as more projects were started this became confusing. I added a new target `make release` [in arguments-mini](https://github.com/Wallby/arguments-mini/commit/af7e2062d70498b7da2aba933c3511dcbec90a14) which executed a single executable (`test.exe` for windows or `test` for linux). Because of work on other libraries, and tcp-mini being quite usable, [tcp-mini-test](https://github.com/Wallby/tcp-mini-test) hasn't been replaced yet, [arguments-mini-test](https://github.com/Wallby/arguments-mini-test) (which is now archived) has been replaced by a test in arguments-mini.
 
 For lcg-mini I created a different type of test, namely [a command line program](https://github.com/Wallby/lcg) that can generate individual psuedorandom numbers as well as generate .jpg files to see whether any repetition is visible looking at the image.
-
-## Versioning and releasing
-
-[For tcp-mini](https://github.com/Wallby/tcp-mini/releases) and [for arguments-mini](https://github.com/Wallby/arguments-mini/releases) I made several releases. I created [matching releases for arguments-mini-test](https://github.com/Wallby/arguments-mini-test) too when that was still in a separate repository. I also made releases [for tint-mini](https://github.com/Wallby/tint-mini/releases) and for [lcg-mini](https://github.com/Wallby/lcg-mini/releases). Some projects (array-mini, check-mini, clock-mini, sharedlibrary-mini, test-mini and makefile-mini) currently have no releases, which I think is mostly due to the repetition of Makefiles that makefile-mini (which is currently W.I.P.) aims to solve.
-
-All C/C++ \*-mini libraries have a macro variable `#define *_MINI_VERSION` (e.g. for tcp-mini `#define TCP_MINI_VERSION`).
-
-Headerguards use a macro `#define *_MINI_H` named after the file the guard is in (e.g. `#define TCP_MINI_H` for `tcp_mini.h`). Typenames except enum, variablenames and functionnames are prefixed with `*m_` (e.g. `tm_` for tcp-mini). Macros are prefixed with `*M_` (e.g. `CM_` for check-mini). Enums are prefixed with `E*M` (e.g. `ECM` for check-mini).
-
-Though there are \*-mini libraries that have the same function prefix (`am_` for both arguments-mini and array-mini, `tm_` for tcp-mini, tint-mini and test-mini), this is possible as long as each library contains different functions. There is a function `void *m_set_on_print(void(*a)(char*, FILE*));` in several \*-mini libraries, but thusfar this works as there are different types of libraries..
-1. libraries intended to be fast thus don't require printing functionality (e.g. array-mini and tint-mini)
-2. libaries intended to be reliable thus requiring printing functionality (e.g. arguments-mini and tcp-mini)
-3. libraries that contain an entry point and thus can print directly to stdout (e.g. test-mini which contains `__wrap_main` which calls `main`)
-
-All three types of library can be linked together, but there can only be one library of the 2nd type per letter (because of `*m_set_on_print`) and only one library of the 3rd type (as there can only be one entry point). There can be any number of libraries of the 1st type, of which clock-mini and check-mini are an example.
