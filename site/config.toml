@@ -85,12 +85,6 @@ disableKinds = ["taxonomy"]
     image = "/img/excel.svg"
 
   [[params.technologies]]
-    name = "Audacity"
-    url = "https://www.audacityteam.org/"
-    image = "/img/audacity.svg"
-    smooth_image = true
-
-  [[params.technologies]]
     name = "Jira"
     url = "https://www.jira.com/"
     image = "/img/jira.png"
@@ -163,17 +157,18 @@ disableKinds = ["taxonomy"]
     image = "/img/xlib.ico"
     smooth_image = false
 
-  [[params.technologies]]
+  [[params.other_technologies]]
+    name = "Audacity"
+    url = "https://www.audacityteam.org/"
+    image = "/img/audacity.svg"
+    smooth_image = true
+
+  [[params.other_technologies]]
     name = "SDL"
     url = "https://www.libsdl.org/"
     image = "/img/sdl.png"
     smooth_image = true
 
-  [[params.other_technologies]]
-    name = "Redstone"
-    image = "/img/redstone.webp"
-    smooth_image = false
-  
   [[params.other_technologies]]
     name = "Portaudio"
     url = "https://www.portaudio.com/"
@@ -231,14 +226,14 @@ disableKinds = ["taxonomy"]
   # Tiles Section
   [params.tiles]
     showcase = [
-      "personal_project/fireworks_nuts_and_bolts",
-      "personal_project/asterisk_mini",
       "personal_project/sound_modeling",
       "school_project/project_sulphur",
       "school_project/agr",
       "school_project/arboreal",
       "school_project/mayor",
       "school_project/barock_battles",
+      "personal_project/fireworks_nuts_and_bolts",
+      "personal_project/asterisk_mini",
       "personal_project/jellyventure"
     ]
 
